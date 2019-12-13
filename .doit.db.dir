@@ -12,7 +12,7 @@
 'copy_assets:output/assets/css/baguetteBox.min.css', (8704, 419)
 'render_posts:timeline_changes', (9216, 109)
 'render_taxonomies:output/categories/coaching/index.html', (9728, 2692)
-'sitemap:output/sitemap.xml', (271872, 7103)
+'sitemap:output/sitemap.xml', (271872, 7101)
 'copy_assets:output/assets/js/jquery-1.10.2.min.js', (15360, 300)
 'copy_files:output/files/images/procrastination.png', (15872, 276)
 'copy_files:output/files/favicon.ico', (16384, 245)

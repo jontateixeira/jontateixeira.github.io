@@ -26,7 +26,7 @@ SITE_URL = "http://jontateixeira.github.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://example.com/"
 BLOG_EMAIL = "jonta.teixeira@gmail.com"
-BLOG_DESCRIPTION = "(geo)mechanics, (geo)chemical and multiphysics tutorials and coding issues"  # (translatable)
+BLOG_DESCRIPTION = "(geo)mechanics, (geo)chemical and multiphysics"  # (translatable)
 
 
 # Nikola is multilingual!
