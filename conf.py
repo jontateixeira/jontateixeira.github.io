@@ -1206,6 +1206,7 @@ SOCIAL_BUTTONS_CODE = """ """
 # before </head>
 # (translatable)
 EXTRA_HEAD_DATA = """
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
