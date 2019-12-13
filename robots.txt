@@ -1,0 +1,4 @@
+Sitemap: http://jontateixeira.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: jontateixeira.github.io

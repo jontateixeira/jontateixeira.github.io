@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>YHWH Dwells in my heart (Posts about nonlinear dynamic)</title><link>http://jontateixeira.github.io/</link><description></description><atom:link href="http://jontateixeira.github.io/categories/nonlinear-dynamic.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:jonta.teixeira@gmail.com"&gt;Jonathan C. Teixeira&lt;/a&gt; &lt;a rel="license" href="https://creativecommons.org/licenses/by/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /&gt;&lt;/a&gt;&lt;br /&gt;</copyright><lastBuildDate>Fri, 13 Dec 2019 18:10:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nonlinear dynamics 1: Phase portrait</title><link>http://jontateixeira.github.io/posts/phase-portrait/</link><dc:creator>Jonathan C. Teixeira</dc:creator><description>&lt;div&gt;&lt;p&gt;Sometimes &lt;em&gt;chemical problems&lt;/em&gt; can be answered using knowledge of &lt;em&gt;nonlinear dynamic analysis&lt;/em&gt; that is not directly related to chemistry. For example, some information about a complex reactions flow can be gained from the mathematical models of the interspecific competition. Oscillating chemical reactions such as the &lt;a class="reference external" href="https://doi.org/10.1021/ja01352a006"&gt;Bray-Liebhafsky reaction&lt;/a&gt;, the &lt;a class="reference external" href="https://doi.org/10.1021/ed050p496"&gt;Briggs-Rauscher reaction&lt;/a&gt; , and the &lt;a class="reference external" href="https://doi.org/10.1063/1.441007"&gt;Belousov-Zhabotinski reaction&lt;/a&gt; provide wonderful examples of relaxation oscillations (nonlinear behavior) in science. They are often demonstrated in chemistry classes or used to astound the public at university open days. The first experiment of the BZ reaction was conducted by the Russian biochemist Boris Belousov in the 1950s, and the results were not confirmed until as late as 1968 by Zhabotinski (those examples will be addressed ina future post).&lt;/p&gt;
+&lt;p&gt;In this first post, we going to make a classic &lt;em&gt;phase portrait&lt;/em&gt; analysis, considering non-isothermal &lt;em&gt;CSTR&lt;/em&gt; problem, where we going to identify &lt;strong&gt;multiplicity steady-state&lt;/strong&gt;. Due to the nonlinear behavior of chemical systems (strongly linked with the &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Arrhenius_equation"&gt;Arrhenius equation&lt;/a&gt;), the existence of multiplicity steady-state is often found when we are modelling or simulating a chemical system, sometimes we come across this behavior, experimentally.&lt;/p&gt;
+&lt;p&gt;Before we get started, let's define critical points (steady-state for engineering chemical accent) and how to classify them. First start with one of the simplest systems, a homogeneous linear system. Such a system has the form:&lt;/p&gt;
+&lt;div class="math"&gt;
+\begin{equation*}
+\frac{d\mathbf{x}}{dt} = \mathbf{A}\mathbf{x}
+\end{equation*}
+&lt;/div&gt;
+&lt;p&gt;where &lt;span class="math"&gt;\(\mathbf{A}\)&lt;/span&gt; is a matrix 2-by-2, and &lt;span class="math"&gt;\(\mathbf{x}\)&lt;/span&gt; is a vector 2-by-1. From calculus we have solution family like &lt;span class="math"&gt;\(\mathbf{x} = \mathbf{\omega} e^{\lambda t}\)&lt;/span&gt;. So replace this into homogeneous system, we get:&lt;/p&gt;
+&lt;div class="math"&gt;
+\begin{equation*}
+\left(\mathbf{A} - \lambda\mathbf{I} \right)\omega = \mathbf{0}
+\end{equation*}
+&lt;/div&gt;
+&lt;p&gt;with &lt;span class="math"&gt;\(\lambda\)&lt;/span&gt; and &lt;span class="math"&gt;\(\omega\)&lt;/span&gt; are the eigenvalue and eigenvector of &lt;span class="math"&gt;\(\mathbf{A}\)&lt;/span&gt;, respectively. In order to obtain the eigenvalue, we need to solve the &lt;strong&gt;characteristic equation&lt;/strong&gt; (&lt;span class="math"&gt;\(\mathrm{det}\left(\mathbf{A} - \lambda\mathbf{I} \right) = 0\)&lt;/span&gt;) and eigenvector from constraint &lt;span class="math"&gt;\(\|\omega\| = 0\)&lt;/span&gt; and homogeneous system above.&lt;/p&gt;
+&lt;p&gt;The correspondent solution of the homogeneous linear system (i.e. when &lt;span class="math"&gt;\(\mathbf{A}\mathbf{x}=0\)&lt;/span&gt;) is named by critical points and correspond to steady-states or equilibria of the system. The investigation of the critical point character, based on &lt;em&gt;Lyapunov’s stability&lt;/em&gt; criteria, is closely related to the question of the system stability at the steady-state to small disturbances can be assessed first by linearization and then by computation of the eigenvalues of the Jacobian matrix:&lt;/p&gt;
+&lt;div class="math"&gt;
+\begin{equation*}
+\mathbf{J}(\mathbf{x0}) =
+\begin{bmatrix}
+  \frac{\partial f_1(\mathbf{x0})}{\partial x_1} &amp;amp; \frac{\partial f_1(\mathbf{x0})}{\partial x_2} &amp;amp; ... &amp;amp; \frac{\partial f_1(\mathbf{x0})}{\partial x_m} \\
+  \frac{\partial f_2(\mathbf{x0})}{\partial x_1} &amp;amp; \frac{\partial f_2(\mathbf{x0})}{\partial x_2} &amp;amp; ... &amp;amp; \frac{\partial f_2(\mathbf{x0})}{\partial x_m} \\
+  \vdots &amp;amp; \vdots &amp;amp; \dots &amp;amp; \vdots \\
+  \frac{\partial f_i(\mathbf{x0})}{\partial x_1} &amp;amp; \frac{\partial f_i(\mathbf{x0})}{\partial x_2} &amp;amp; ... &amp;amp; \frac{\partial f_i(\mathbf{x0})}{\partial x_m} \\
+  \vdots &amp;amp; \vdots &amp;amp; \dots &amp;amp; \vdots \\
+  \frac{\partial f_n(\mathbf{x0})}{\partial x_1} &amp;amp; \frac{\partial f_n(\mathbf{x0})}{\partial x_2} &amp;amp; ... &amp;amp; \frac{\partial f_n(\mathbf{x0})}{\partial x_m} \\
+\end{bmatrix}
+\end{equation*}
+&lt;/div&gt;
+&lt;p&gt;Or qualitatively using phase portrait analysis. The phase portrait is a set of solving from a number of initial conditions, that will produce a phase path (a plot that shows the dependence of one unknown with the other) showing the behavior of the system along time integration. For example, given the linear system:&lt;/p&gt;
+&lt;div class="math"&gt;
+\begin{align*}
+x' &amp;amp;= ax \\
+y' &amp;amp;= b(x + y )
+\end{align*}
+&lt;/div&gt;
+&lt;p&gt;which has as critical point in the origin, and the eigenvalues of Jacobian: &lt;span class="math"&gt;\(\mathbf{J} = \begin{bmatrix} a &amp;amp; 0 \\ b &amp;amp; b\end{bmatrix}\)&lt;/span&gt; are a and b. If &lt;span class="math"&gt;\(a= -1; b=-5\)&lt;/span&gt; the phase portrait &lt;a class="footnote-reference brackets" href="http://jontateixeira.github.io/posts/phase-portrait/#id2" id="id1"&gt;1&lt;/a&gt; looks like this:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="Phase portrait with a= -1 and b=-5." src="http://jontateixeira.github.io/files/nonlinear-dynamic/phase_portrait_linear.png" style="width: 700px; height: 500px;"&gt;
+&lt;p class="caption"&gt;Phase portrait with a= -1 and b=-5.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Here all trajectories are lines through the origin (steady state of the system), this behavior is typically to &lt;strong&gt;attractor critical points&lt;/strong&gt;. Others trajectories are ilustraited in Table below, with differents values for a and b:&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 34%"&gt;
+&lt;col style="width: 34%"&gt;
+&lt;col style="width: 32%"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th class="head"&gt;&lt;p&gt;parameters values&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;p&gt;Phase portrait&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;p&gt;Critical point type&lt;/p&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;a = +1; b = -5&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;&lt;img alt="Phase portrait with a= -1 and b=-5." src="http://jontateixeira.github.io/files/nonlinear-dynamic/phase_portrait_linear_2.png" style="width: 350.0px; height: 250.0px;"&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;saddle point&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;a = +1; b = +5&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;&lt;img alt="Phase portrait with a= -1 and b=-5." src="http://jontateixeira.github.io/files/nonlinear-dynamic/phase_portrait_linear_4.png" style="width: 350.0px; height: 250.0px;"&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;source point&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Those are commonly found in chemical reactors system, but there are others critical points types (center, spiral, star, degenerated,... more info, see the aforementioned references).&lt;/p&gt;
+&lt;p&gt;Here the chemical engineering kinetic borrows some terms from the dynamic system theory, without a deep discussion of the mathematical apparatus,
+we will show how the mathematical suites allow one to determine the critical point type. Assume the mathematical model of a process described by a set of two differential equations. As we saw above, in order to find the critical point type one has to:
+1. Calculate the critical points (steady-states) on a phase plane, or solving the corresponding algebraic equation set (&lt;span class="math"&gt;\(\mathbf{A}\mathbf{x}=0\)&lt;/span&gt;);
+2. Compute the Jacobian matrix for the system using the critical points coordinates (&lt;span class="math"&gt;\(\mathbf{J}(\mathbf{x0})\)&lt;/span&gt;);
+3. Find the eigenvalues of the latter matrix, to establish the critical point type and the stability of the stationary state.&lt;/p&gt;
+&lt;div class="section" id="non-isothermal-reactor-problem"&gt;
+&lt;h2&gt;Non-isothermal reactor problem&lt;/h2&gt;
+&lt;p&gt;Lets us consider the steady-state operation of a CSTR under non-isothermal conditions. If an exothermic reaction takes place in an isolated system (i.e. adiabatic reactor, absent of the heat exchange), a temperature will apparently increase over time, for example, hydrolysis of Propylene Glycol. The rate of this increase depends both on the kinetic parameters (rate constant) and on the thermodynamic properties of the system (thermal conditions of the reaction, heat capacity). For a well-mixed tank reactor, where a single first-order reaction:
+A + B → C occurs, the mathematical model is described by this set of equations:&lt;/p&gt;
+&lt;div class="math"&gt;
+\begin{align*}
+\frac{dC_A}{dt} &amp;amp;= \frac{C_{Ao} - C_A}{\tau} - r_A \\
+\frac{dT}{dt} &amp;amp;= \frac{T_o - T}{\tau} + \frac{-\Delta H_{rx}}{\rho C_p|_{mx}} (-r_A)
+\end{align*}
+&lt;/div&gt;
+&lt;p&gt;where: &lt;span class="math"&gt;\(\tau\)&lt;/span&gt; residence time, &lt;span class="math"&gt;\(C_{Ao}\)&lt;/span&gt; the input reagent concentration, &lt;span class="math"&gt;\(r_A = k_o e^{\frac{E}{RT}} C_A^n\)&lt;/span&gt; kinetic rate, &lt;span class="math"&gt;\(T_o\)&lt;/span&gt; is the reagent temperature at entering reactor, &lt;span class="math"&gt;\(\Delta H_{rx}\)&lt;/span&gt; heat of reaction, &lt;span class="math"&gt;\(\rho|_{mx}\)&lt;/span&gt; misture density and &lt;span class="math"&gt;\(C_p|_{mx}\)&lt;/span&gt; misture heat capacity. For simplicity, we assume that the heat capacity, heat reaction and density are temperature independent (i.e. constants) and the kinetic is a single first-order reaction. So, we can rewrite the model as:&lt;/p&gt;
+&lt;div class="math"&gt;
+\begin{align*}
+\frac{dC_A}{dt} &amp;amp;= \frac{C_{Ao} - C_A}{\tau} - k_o e^{\frac{E}{RT}}C_A \\
+\frac{dT}{dt} &amp;amp;= \frac{T_o - T}{\tau} + G k_o e^{\frac{E}{RT}}C_A \\
+\end{align*}
+&lt;/div&gt;
+&lt;p&gt;with: &lt;span class="math"&gt;\(G = \frac{\Delta H_{rx}}{\rho C_p |_{mx}}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Modeling the system of ODEs using the initial parameters:&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%"&gt;
+&lt;col style="width: 50%"&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span class="math"&gt;\(G\)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;&lt;span class="math"&gt;\(90.3\)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span class="math"&gt;\(\frac{E}{R}\)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;&lt;span class="math"&gt;\(- 6307\)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span class="math"&gt;\(k_o\)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;17 x &lt;span class="math"&gt;\(10^{+6}\)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span class="math"&gt;\(\tau\)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;60&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span class="math"&gt;\(C_{Ao}\)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;1.5&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span class="math"&gt;\(T_o\)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;250&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;We can find a stationary state through the phase portrait, from several initial conditions as ilustraited following:&lt;/p&gt;
+&lt;img alt="/files/nonlinear-dynamic/phase_portrait_nonlinear_01.png" src="http://jontateixeira.github.io/files/nonlinear-dynamic/phase_portrait_nonlinear_01.png" style="width: 700px; height: 500px;"&gt;
+&lt;p&gt;We can see that the steady-state (1.499, 250.015) is an &lt;em&gt;attractor critical point&lt;/em&gt;, because all phase path toward it. The stationary state is linked to the thermal stability of the reactor (in the current case) and consequently with the convertion, that in this case is very slow. In order to confirm the attraction behavior, we analyze the Jacobian of the system using the critical point:&lt;/p&gt;
+&lt;div class="math"&gt;
+\begin{equation*}
+\mathbf{J}(C_A, T) =
+\begin{bmatrix}
+  -\frac{1}{\tau}-k_o e^{-\frac{E}{RT}} &amp;amp; -\frac{k_o C_A \frac{E}{R} e^{-\frac{E}{RT}}}{T^2} \\
+  k_o G e^{-\frac{E}{RT}} &amp;amp; \frac{k_o C_A \frac{E}{R} G e^{-\frac{E}{RT}}}{T^2} - \frac{1}{\tau}
+\end{bmatrix}
+\end{equation*}
+&lt;/div&gt;
+&lt;p&gt;where we found the following eigenvalues: (-0.1667, -0.1666) &amp;lt; 0. The dynamic of this problem depends on the temperature of the initial mixture (as also: inlet concentration, residence time and etc), and thusas also the portrait can change strikingly. In the discussed example the steady-state is undesirable from the efficiency point of view. In order to enable the process, we need to increase the inlet temperature to improve the convertion and thus goes from old stationary to the other one, stable or may be unstable. If the latter one happens, any small perturbation of the system takes it out of the unstable state and goes to a stable one.
+Such situation is illustrated the animation below&lt;/p&gt;
+&lt;img alt="/files/nonlinear-dynamic/phase_portrait.gif" src="http://jontateixeira.github.io/files/nonlinear-dynamic/phase_portrait.gif" style="width: 700px; height: 500px;"&gt;
+&lt;p&gt;When we change the input reagent temperature, we saw the presence of multiple steady-state (red square). In these cases (@ 322 and 331), the animation shows that two of the three possible stationary states are stable: for them the Jacobian matrix eigenvalues are real and of the same sign (stable point). The third steady-state has Jacobian eigenvalues real, but with signs opposite (saddle point).&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 15%"&gt;
+&lt;col style="width: 20%"&gt;
+&lt;col style="width: 45%"&gt;
+&lt;col style="width: 20%"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th class="head"&gt;&lt;p&gt;&lt;span class="math"&gt;\(T_o\)&lt;/span&gt;&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;p&gt;&lt;span class="math"&gt;\(C_A, T\)&lt;/span&gt;&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;p&gt;eigenvalues of Jacobian &lt;span class="math"&gt;\((C_A,T)\)&lt;/span&gt;&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td rowspan="3"&gt;&lt;p&gt;@ 322.727&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;1.431, 328.90&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;-0.1670, -0.1140&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Attractor&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;0.736, 391.70&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;-0.1670,  0.0132&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Saddle&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;0.225, 437.80&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;-0.0478, -0.0167&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Attractor&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td rowspan="3"&gt;&lt;p&gt;@ 331.818&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;1.313, 348.70&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;-0.0167, -0.0044&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Attractor&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;1.110, 367.00&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;-0.0167,  0.0049&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Saddle&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;0.142, 454.50&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;-0.1141, -0.0167&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Attractor&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This example by no means covers all possible problems of chemical reactor kinetics as well as other differential models for chemical-engineering processes, on which the nonlinear dynamic can be applied. In the next post, we'll be shown how to make a bifurcation diagram through &lt;a class="reference external" href="https://sourceforge.net/projects/matcont/"&gt;software MatCont&lt;/a&gt;.&lt;/p&gt;
+&lt;hr class="docutils"&gt;
+&lt;blockquote&gt;
+&lt;dl class="footnote brackets"&gt;
+&lt;dt class="label" id="id2"&gt;&lt;span class="brackets"&gt;&lt;a class="fn-backref" href="http://jontateixeira.github.io/posts/phase-portrait/#id1"&gt;1&lt;/a&gt;&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;all phase portrait and images were plotted using the function &lt;a class="reference external" href="http://jontateixeira.github.io/pages/listings-nonlinear/"&gt;phasePortrait&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>chemical problem</category><category>CSTR</category><category>Lyapunov’s stability</category><category>nonlinear dynamic</category><category>phase portrait</category><guid>http://jontateixeira.github.io/posts/phase-portrait/</guid><pubDate>Tue, 05 Nov 2019 08:43:02 GMT</pubDate></item></channel></rss>

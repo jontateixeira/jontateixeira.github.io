@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="phasePortrait.m">
+<meta name="viewport" content="width=device-width">
+<title>phasePortrait.m | YHWH Dwells in my heart</title>
+<link href="../assets/css/bitter.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="http://jontateixeira.github.io/listings/phasePortrait.m.html">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'center', // Change this to 'left' if you want left-aligned equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jonathanteixeira/" title="About me"><i class="icon-user"></i></a></li>
+            <li><a href="https://twitter.com/jontateixeira" title="My Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://github.com/jontateixeira" title="My Github"><i class="icon-github"></i></a></li>
+            <li><a href="../pages/courses/index.html" title="Course"><i class="icon-pencil"></i></a></li>
+            <li><a href="../archive.html" title="Archive"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../rss.xml" title="RSS feed"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+<nav class="breadcrumbs"><ul class="breadcrumb">
+<li><a href=".">listings</a></li>
+                <li>phasePortrait.m</li>
+</ul></nav><h1>phasePortrait.m
+            <small><a href="phasePortrait.m">(Source)</a></small>
+        </h1>
+    <table class="codetable"><tr>
+<td class="linenos"><div class="linenodiv"><pre><a href="#listingsphaseportraitm-1"> 1</a>
+<a href="#listingsphaseportraitm-2"> 2</a>
+<a href="#listingsphaseportraitm-3"> 3</a>
+<a href="#listingsphaseportraitm-4"> 4</a>
+<a href="#listingsphaseportraitm-5"> 5</a>
+<a href="#listingsphaseportraitm-6"> 6</a>
+<a href="#listingsphaseportraitm-7"> 7</a>
+<a href="#listingsphaseportraitm-8"> 8</a>
+<a href="#listingsphaseportraitm-9"> 9</a>
+<a href="#listingsphaseportraitm-10">10</a>
+<a href="#listingsphaseportraitm-11">11</a>
+<a href="#listingsphaseportraitm-12">12</a>
+<a href="#listingsphaseportraitm-13">13</a>
+<a href="#listingsphaseportraitm-14">14</a>
+<a href="#listingsphaseportraitm-15">15</a>
+<a href="#listingsphaseportraitm-16">16</a>
+<a href="#listingsphaseportraitm-17">17</a>
+<a href="#listingsphaseportraitm-18">18</a>
+<a href="#listingsphaseportraitm-19">19</a>
+<a href="#listingsphaseportraitm-20">20</a>
+<a href="#listingsphaseportraitm-21">21</a>
+<a href="#listingsphaseportraitm-22">22</a>
+<a href="#listingsphaseportraitm-23">23</a>
+<a href="#listingsphaseportraitm-24">24</a>
+<a href="#listingsphaseportraitm-25">25</a>
+<a href="#listingsphaseportraitm-26">26</a>
+<a href="#listingsphaseportraitm-27">27</a>
+<a href="#listingsphaseportraitm-28">28</a>
+<a href="#listingsphaseportraitm-29">29</a>
+<a href="#listingsphaseportraitm-30">30</a>
+<a href="#listingsphaseportraitm-31">31</a>
+<a href="#listingsphaseportraitm-32">32</a>
+<a href="#listingsphaseportraitm-33">33</a>
+<a href="#listingsphaseportraitm-34">34</a>
+<a href="#listingsphaseportraitm-35">35</a>
+<a href="#listingsphaseportraitm-36">36</a>
+<a href="#listingsphaseportraitm-37">37</a>
+<a href="#listingsphaseportraitm-38">38</a>
+<a href="#listingsphaseportraitm-39">39</a>
+<a href="#listingsphaseportraitm-40">40</a>
+<a href="#listingsphaseportraitm-41">41</a>
+<a href="#listingsphaseportraitm-42">42</a>
+<a href="#listingsphaseportraitm-43">43</a>
+<a href="#listingsphaseportraitm-44">44</a>
+<a href="#listingsphaseportraitm-45">45</a>
+<a href="#listingsphaseportraitm-46">46</a>
+<a href="#listingsphaseportraitm-47">47</a>
+<a href="#listingsphaseportraitm-48">48</a>
+<a href="#listingsphaseportraitm-49">49</a>
+<a href="#listingsphaseportraitm-50">50</a>
+<a href="#listingsphaseportraitm-51">51</a>
+<a href="#listingsphaseportraitm-52">52</a>
+<a href="#listingsphaseportraitm-53">53</a>
+<a href="#listingsphaseportraitm-54">54</a>
+<a href="#listingsphaseportraitm-55">55</a>
+<a href="#listingsphaseportraitm-56">56</a>
+<a href="#listingsphaseportraitm-57">57</a>
+<a href="#listingsphaseportraitm-58">58</a>
+<a href="#listingsphaseportraitm-59">59</a>
+<a href="#listingsphaseportraitm-60">60</a>
+<a href="#listingsphaseportraitm-61">61</a>
+<a href="#listingsphaseportraitm-62">62</a></pre></div></td>
+<td class="code"><pre class="code literal-block"><a name="listingsphaseportraitm-1"></a><span class="n">function</span> <span class="nf">phasePortrait</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">lb</span><span class="p">,</span> <span class="n">ub</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">randomize</span><span class="p">)</span>
+<a name="listingsphaseportraitm-2"></a><span class="o">%</span><span class="n">Create</span> <span class="n">a</span> <span class="n">phase</span> <span class="n">portrait</span> <span class="n">from</span> <span class="n">a</span> <span class="n">two</span><span class="o">-</span><span class="n">dimensional</span> <span class="n">system</span> <span class="n">of</span> <span class="n">ode</span>
+<a name="listingsphaseportraitm-3"></a><span class="o">%</span>
+<a name="listingsphaseportraitm-4"></a><span class="o">%</span> <span class="nl">SYNOPSIS</span><span class="p">:</span>
+<a name="listingsphaseportraitm-5"></a><span class="o">%</span>   <span class="n">phasePortrait</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">lb</span><span class="p">,</span> <span class="n">ub</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">randomize</span><span class="p">)</span>
+<a name="listingsphaseportraitm-6"></a><span class="o">%</span>
+<a name="listingsphaseportraitm-7"></a><span class="o">%</span> <span class="nl">PARAMETERS</span><span class="p">:</span>
+<a name="listingsphaseportraitm-8"></a><span class="o">%</span>   <span class="n">fun</span>         <span class="o">-</span> <span class="n">Function</span> <span class="n">handle</span> <span class="n">or</span> <span class="n">function</span> <span class="n">name</span> <span class="n">with</span> <span class="n">the</span> <span class="n">system</span> <span class="n">of</span> <span class="n">ode</span> 
+<a name="listingsphaseportraitm-9"></a><span class="o">%</span>   <span class="n">lb</span>          <span class="o">-</span> <span class="n">lower</span> <span class="n">bound</span> <span class="n">of</span> <span class="n">phase</span> <span class="n">portrait</span>
+<a name="listingsphaseportraitm-10"></a><span class="o">%</span>   <span class="n">ub</span>          <span class="o">-</span> <span class="n">upper</span> <span class="n">bound</span> <span class="n">of</span> <span class="n">phase</span> <span class="n">portrait</span>
+<a name="listingsphaseportraitm-11"></a><span class="o">%</span>   <span class="n">n</span>           <span class="o">-</span> <span class="n">number</span> <span class="n">of</span> <span class="n">intial</span> <span class="n">condition</span> <span class="n">of</span> <span class="n">system</span>
+<a name="listingsphaseportraitm-12"></a><span class="o">%</span>   <span class="n">randomize</span>   <span class="o">-</span> <span class="n">logical</span> <span class="n">variable</span> <span class="n">to</span> <span class="n">randomize</span> <span class="n">the</span> <span class="n">initial</span> <span class="n">points</span> <span class="n">to</span> <span class="n">integrate</span> 
+<a name="listingsphaseportraitm-13"></a><span class="o">%</span>                 <span class="n">the</span> <span class="n">system</span><span class="p">.</span> <span class="n">OPTIONAL</span><span class="p">.</span>  <span class="n">Default</span> <span class="n">value</span> <span class="o">==</span> <span class="nb">true</span>
+<a name="listingsphaseportraitm-14"></a><span class="o">%</span>
+<a name="listingsphaseportraitm-15"></a><span class="o">%</span> <span class="nl">RETURNS</span><span class="p">:</span>
+<a name="listingsphaseportraitm-16"></a><span class="o">%</span>   <span class="n">phase</span> <span class="n">portrait</span> <span class="n">plot</span>
+<a name="listingsphaseportraitm-17"></a><span class="o">%</span>
+<a name="listingsphaseportraitm-18"></a><span class="o">%</span> <span class="nl">EXAMPLE</span><span class="p">:</span>
+<a name="listingsphaseportraitm-19"></a><span class="o">%</span>
+<a name="listingsphaseportraitm-20"></a>
+<a name="listingsphaseportraitm-21"></a><span class="k">if</span> <span class="n">nargin</span><span class="o">&lt;</span><span class="mi">4</span> 
+<a name="listingsphaseportraitm-22"></a>  <span class="n">n</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<a name="listingsphaseportraitm-23"></a>  <span class="n">randomize</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<a name="listingsphaseportraitm-24"></a><span class="n">elseif</span> <span class="n">nargin</span> <span class="o">&lt;</span> <span class="mi">5</span>
+<a name="listingsphaseportraitm-25"></a>  <span class="n">randomize</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<a name="listingsphaseportraitm-26"></a><span class="n">end</span>
+<a name="listingsphaseportraitm-27"></a>
+<a name="listingsphaseportraitm-28"></a><span class="n">num</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+<a name="listingsphaseportraitm-29"></a><span class="n">dx</span> <span class="o">=</span> <span class="n">abs</span><span class="p">(</span><span class="n">ub</span><span class="o">-</span><span class="n">lb</span><span class="p">)</span><span class="o">/</span><span class="n">num</span><span class="p">;</span>
+<a name="listingsphaseportraitm-30"></a>
+<a name="listingsphaseportraitm-31"></a><span class="p">[</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">]</span><span class="o">=</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span><span class="n">dx</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span><span class="n">ub</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">:</span><span class="n">dx</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">:</span><span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>
+<a name="listingsphaseportraitm-32"></a>
+<a name="listingsphaseportraitm-33"></a><span class="n">v</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">numel</span><span class="p">(</span><span class="n">x1</span><span class="p">(</span><span class="o">:</span><span class="p">)),</span><span class="mi">2</span><span class="p">);</span>
+<a name="listingsphaseportraitm-34"></a><span class="k">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="n">numel</span><span class="p">(</span><span class="n">x1</span><span class="p">(</span><span class="o">:</span><span class="p">))</span>
+<a name="listingsphaseportraitm-35"></a>   <span class="n">v</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="o">:</span><span class="p">)</span> <span class="o">=</span> <span class="n">fun</span><span class="p">([</span><span class="n">x1</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">x2</span><span class="p">(</span><span class="n">i</span><span class="p">)]);</span>
+<a name="listingsphaseportraitm-36"></a><span class="n">end</span>
+<a name="listingsphaseportraitm-37"></a>
+<a name="listingsphaseportraitm-38"></a><span class="nf">figure</span><span class="p">()</span>
+<a name="listingsphaseportraitm-39"></a><span class="n">disp</span><span class="p">(</span><span class="err">'</span><span class="n">vectorial</span> <span class="n">field</span><span class="err">'</span><span class="p">)</span>
+<a name="listingsphaseportraitm-40"></a><span class="n">hold</span> <span class="n">on</span>
+<a name="listingsphaseportraitm-41"></a><span class="n">quiver</span><span class="p">(</span><span class="n">x1</span><span class="p">(</span><span class="o">:</span><span class="p">),</span><span class="n">x2</span><span class="p">(</span><span class="o">:</span><span class="p">),</span><span class="n">v</span><span class="p">(</span><span class="o">:</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">v</span><span class="p">(</span><span class="o">:</span><span class="p">,</span><span class="mi">2</span><span class="p">));</span>
+<a name="listingsphaseportraitm-42"></a><span class="k">if</span> <span class="n">randomize</span>
+<a name="listingsphaseportraitm-43"></a>  <span class="n">u</span><span class="o">=</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">ub</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="o">*</span><span class="n">rand</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<a name="listingsphaseportraitm-44"></a>  <span class="n">v</span><span class="o">=</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">-</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">rand</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<a name="listingsphaseportraitm-45"></a><span class="k">else</span> 
+<a name="listingsphaseportraitm-46"></a>  <span class="n">n</span> <span class="o">=</span> <span class="n">floor</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="mi">4</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+<a name="listingsphaseportraitm-47"></a>  <span class="n">u</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="n">ub</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="n">n</span><span class="p">);</span> 
+<a name="listingsphaseportraitm-48"></a>  <span class="n">u</span> <span class="o">=</span> <span class="p">[</span><span class="n">repmat</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="n">repmat</span><span class="p">(</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">),</span> <span class="n">repmat</span><span class="p">(</span><span class="n">ub</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">)];</span> 
+<a name="listingsphaseportraitm-49"></a>  <span class="n">v</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">n</span><span class="p">);</span>
+<a name="listingsphaseportraitm-50"></a>  <span class="n">v</span> <span class="o">=</span> <span class="p">[</span><span class="n">repmat</span><span class="p">(</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">),</span> <span class="n">repmat</span><span class="p">(</span><span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">),</span> <span class="n">repmat</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)];</span> 
+<a name="listingsphaseportraitm-51"></a><span class="n">end</span>
+<a name="listingsphaseportraitm-52"></a>
+<a name="listingsphaseportraitm-53"></a><span class="n">funcao</span> <span class="o">=</span> <span class="l">@(</span><span class="n">t</span><span class="p">,</span><span class="n">x</span><span class="l">)</span> <span class="n">fun</span><span class="p">([</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">)]);</span>
+<a name="listingsphaseportraitm-54"></a><span class="n">disp</span><span class="p">(</span><span class="err">'</span><span class="n">tracing</span> <span class="n">paths</span> <span class="p">...</span><span class="err">'</span><span class="p">)</span>
+<a name="listingsphaseportraitm-55"></a><span class="k">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="n">numel</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+<a name="listingsphaseportraitm-56"></a>    <span class="p">[</span><span class="o">~</span><span class="p">,</span><span class="n">sol</span><span class="p">]</span><span class="o">=</span><span class="n">ode45</span><span class="p">(</span><span class="n">funcao</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">],[</span><span class="n">u</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="n">v</span><span class="p">(</span><span class="n">i</span><span class="p">)]);</span>
+<a name="listingsphaseportraitm-57"></a>    <span class="n">plot</span><span class="p">(</span><span class="n">sol</span><span class="p">(</span><span class="o">:</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">sol</span><span class="p">(</span><span class="o">:</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="sc">'k'</span><span class="p">);</span>
+<a name="listingsphaseportraitm-58"></a><span class="n">end</span>
+<a name="listingsphaseportraitm-59"></a><span class="n">hold</span> <span class="n">off</span>
+<a name="listingsphaseportraitm-60"></a>
+<a name="listingsphaseportraitm-61"></a><span class="n">xlim</span><span class="p">([</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="n">ub</span><span class="p">(</span><span class="mi">1</span><span class="p">)])</span>
+<a name="listingsphaseportraitm-62"></a><span class="n">ylim</span><span class="p">([</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">)])</span>
+</pre></td>
+</tr></table>
+<footer id="footer"><p>Contents © 2019         <a href="mailto:jonta.teixeira@gmail.com">Jonathan C. Teixeira</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"></a><br></p>
+            
+        </footer>
+</div>
+    </section><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-25324596-7', 'auto');
+   ga('send', 'pageview');
+</script><script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../assets/js/jquery.timeago.js" type="text/javascript"></script><script src="../assets/js/mathjax.js" type="text/javascript"></script><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>
