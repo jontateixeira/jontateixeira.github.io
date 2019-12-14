@@ -145,7 +145,7 @@ NAVIGATION_LINKS = {
         ('https://www.linkedin.com/in/jonathanteixeira/', 'About me', 'icon-user'),
         ('https://twitter.com/jontateixeira', 'My Twitter', 'icon-twitter'),
         ('https://github.com/jontateixeira', 'My Github', 'icon-github'),
-        ('/pages/courses/index.html', 'Course', 'icon-pencil'),
+        ('/pages/courses/index.html', 'Course', 'icon-edit'),
         ('/archive.html', 'Archive', 'icon-folder-open-alt'),
         ('/categories/index.html', 'Tags', 'icon-tags'),
         ('/rss.xml', 'RSS feed', 'icon-rss')

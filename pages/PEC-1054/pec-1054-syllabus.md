@@ -1,8 +1,8 @@
 <!--
 .. title: PEC 1054 - Métodos Matemáticos
-.. slug: pec-1054-mm
+.. slug: pec-1054-syllabus
 .. date: 2019-07-02 13:00:00 UTC-03:00
-.. template:
+.. template: 
 .. description: PEC 1054 - Métodos matemáticos syllabus page
 -->
 
