@@ -7,94 +7,118 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://jontateixeira.github.io/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/2019/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/archive.html</loc>
-  <lastmod>2019-12-13T18:57:00Z</lastmod>
+  <lastmod>2019-12-14T14:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T14:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/ambiente_de_trabalho/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/cat_coaching/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/cat_nonlinear-dynamic/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/categories/cat_pre-process/</loc>
+  <lastmod>2019-12-14T14:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/chemical-problem/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/coaching/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/cstr/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/categories/gmsh/</loc>
+  <lastmod>2019-12-14T14:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/lyapunovs-stability/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/categories/mesh/</loc>
+  <lastmod>2019-12-14T14:44:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/categories/msh-format/</loc>
+  <lastmod>2019-12-14T14:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/nonlinear-dynamic/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/phase-portrait/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/categories/pre-process/</loc>
+  <lastmod>2019-12-14T14:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/procrastinacao/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/procrastination/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/listings/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/listings/phasePortrait.m.html</loc>
-  <lastmod>2019-12-13T18:57:00Z</lastmod>
+  <lastmod>2019-12-14T13:42:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/listings/post_phase_portrait.m.html</loc>
-  <lastmod>2019-12-13T18:57:00Z</lastmod>
+  <lastmod>2019-12-14T13:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/pages/PEC-1054/pec-1054-syllabus/</loc>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/pages/courses/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/pages/listings-nonlinear/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
-  <loc>http://jontateixeira.github.io/pages/pec-1054-mm/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <loc>http://jontateixeira.github.io/posts/gmsh-exporting-old-msh-format/</loc>
+  <lastmod>2019-12-14T14:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/posts/phase-portrait/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/posts/procrastination-cycle/</loc>
-  <lastmod>2019-12-13T18:10:00Z</lastmod>
+  <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
 </urlset>

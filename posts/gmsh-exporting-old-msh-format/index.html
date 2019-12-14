@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="description" content="old msh format">
 <meta name="viewport" content="width=device-width">
-<title>Procrastination cycle | YHWH Dwells in my heart</title>
+<title>Gmsh: exporting old msh format | YHWH Dwells in my heart</title>
 <link href="../../assets/css/bitter.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/main.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
@@ -11,7 +12,7 @@
 <link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-<link rel="canonical" href="http://jontateixeira.github.io/posts/procrastination-cycle/">
+<link rel="canonical" href="http://jontateixeira.github.io/posts/gmsh-exporting-old-msh-format/">
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -28,17 +29,15 @@ MathJax.Hub.Config({
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
 </script><meta name="author" content="Jonathan C. Teixeira">
 <meta property="og:site_name" content="YHWH Dwells in my heart">
-<meta property="og:title" content="Procrastination cycle">
-<meta property="og:url" content="http://jontateixeira.github.io/posts/procrastination-cycle/">
-<meta property="og:description" content="O ciclo da procrastinação.
-Após uma reunião com o seu chefe (ou orientador), o mesmo lhe dá um prazo de 1 mês para entregar aquele projeto. No primeiro momento você diz: 
-- Puxa, 1 mês é bastante temp">
+<meta property="og:title" content="Gmsh: exporting old msh format">
+<meta property="og:url" content="http://jontateixeira.github.io/posts/gmsh-exporting-old-msh-format/">
+<meta property="og:description" content="old msh format">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2019-12-05T14:30:30-03:00">
-<meta property="article:tag" content="ambiente_de_trabalho">
-<meta property="article:tag" content="coaching">
-<meta property="article:tag" content="Procrastinação">
-<meta property="article:tag" content="procrastination">
+<meta property="article:published_time" content="2019-12-14T10:52:15-03:00">
+<meta property="article:tag" content="gmsh">
+<meta property="article:tag" content="mesh">
+<meta property="article:tag" content="msh format">
+<meta property="article:tag" content="pre-process">
 </head>
 <body>
     <section class="social"><ul>
@@ -53,11 +52,11 @@ Após uma reunião com o seu chefe (ou orientador), o mesmo lhe dá um prazo de 
 
         </ul></section><section class="page-content"><div class="content" rel="main">
     <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">Procrastination cycle</h1>
+        <h1 class="p-name entry-title" itemprop="headline name">Gmsh: exporting old msh format</h1>
 
         <div class="meta">
             <div class="authordate">
-                <time class="timeago" datetime="2019-12-05T14:30:30-03:00">2019-12-05 14:30</time>
+                <time class="timeago" datetime="2019-12-14T10:52:15-03:00">2019-12-14 10:52</time>
             
                       |  
         <a href="index.md" id="sourcelink">Source</a>
@@ -66,44 +65,73 @@ Após uma reunião com o seu chefe (ou orientador), o mesmo lhe dá um prazo de 
                     <div itemprop="keywords" class="tags">
         <ul>
         Tags : 
-           <li><a class="tag p-category" href="../../categories/ambiente_de_trabalho/" rel="tag">ambiente_de_trabalho</a></li>
-           <li><a class="tag p-category" href="../../categories/coaching/" rel="tag">coaching</a></li>
-           <li><a class="tag p-category" href="../../categories/procrastinacao/" rel="tag">Procrastinação</a></li>
-           <li><a class="tag p-category" href="../../categories/procrastination/" rel="tag">procrastination</a></li>
+           <li><a class="tag p-category" href="../../categories/gmsh/" rel="tag">gmsh</a></li>
+           <li><a class="tag p-category" href="../../categories/mesh/" rel="tag">mesh</a></li>
+           <li><a class="tag p-category" href="../../categories/msh-format/" rel="tag">msh format</a></li>
+           <li><a class="tag p-category" href="../../categories/pre-process/" rel="tag">pre-process</a></li>
         </ul>
 </div>
 
         </div>
         <div class="body">
             <div>
-<h3>O ciclo da procrastinação.</h3>
-<p>Após uma reunião com o seu chefe (ou orientador), o mesmo lhe dá um prazo de 1 mês para entregar aquele projeto. No primeiro momento você diz: </p>
-<p>- Puxa, 1 mês é bastante tempo, vou dar conta fácil!</p>
-<p>Aí você começa o projeto de maneira bem caprichosa. No meio do caminho, você dá uma pausa para ver as notícias do dia, ver aquele programa que você perdeu ontem... e quando se dá conta, já perdeu mais de 2 horas.</p>
-<p>Nesse meio tempo, um alerta no celular. O grupo de amigos tá super agitado e a galera tá combinando umas saidinhas no final da semana e no fim de semana... Ou no grupo da família surge alguma “zoeira” ou algo semelhante... Quando você senta para retornar ao trabalho... </p>
-<p>É quando... Aí você levanta, para toma uma água ou aquele cafezinho e encontra outras pessoas para ficar conversando... Depois disso você para e pensa: agora vai!!... <strong>Vai pra onde meu filho!?</strong> Vai usar o banheiro e assim sucessivamente...</p>
-<p>Quando se dá conta já perdeu o dia inteiro, a semana inteira e quando chega o dia da entrega do tão esperado projeto... O resultado? Olha aí na imagem abaixo!</p>
-<p><img src="../../files/images/procrastination.png"></p>
-<p>Tinha tudo para ser o melhor projeto mas, o ciclo da procrastinação não deixou. </p>
-<p>Você já parou para analisar seu dia a dia no trabalho?
-Você faz suas tarefas agora ou sempre deixa para depois?</p>
-<p>Às vezes, mesmo sem saber, você está praticando o tão vicioso ciclo da procrastinação... Isso pode explicar a baixa produtividade de bons profissionais!</p>
+<p>This post is mainly aimed at my colleagues (and students) in the <a href="http://www.lmcg.ufpe.br/">LMCG research group</a> at <a href="https://www.ufpe.br/litpeg">LITPEG</a>. After many people going to me, asking about a bug of <a href="https://bitbucket.org/lmcg_research_group/p3matpac/src/master/">p3matpac preprocessor</a>, I decide to write it. </p>
+<p>After the <a href="http://gmsh.info/">Gmsh</a> 4.0.0 release, Christophe Geuzaine and Jean-François Remacle set the new msh version (msh4) as default msh format (<em>I guess... </em>). After that, new students and colleagues have faced with a following error:</p>
+<pre class="code literal-block"><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">g</span> <span class="p">=</span> <span class="n">gridprocessing</span><span class="p">.</span><span class="n">load_gmsh</span><span class="p">(</span><span class="s">'mesh_test.msh'</span><span class="p">)</span>
+<span class="n">Unknown</span> <span class="n">mesh</span> <span class="n">format</span><span class="p">:</span> <span class="mf">4.1</span> <span class="mi">0</span> <span class="mi">8</span>
+</pre>
+
+
+<p>There are 3 ways to fix this: GUI, CLI, and script <sup id="fnref-1"><a class="footnote-ref" href="#fn-1">1</a></sup>.</p>
+<h4>GUI mode</h4>
+<p>You need to have the following steps:</p>
+<p><strong>1)</strong> Press <code>Ctrl+E</code> shortcut to open the export window:</p>
+<p><img src="../../files/gmsh-exporting-old-msh-format/export_window.png" width="500"></p>
+<p><strong>2)</strong> Select the <code>Version 2 ASCII</code> and OK.</p>
+<p><img src="../../files/gmsh-exporting-old-msh-format/format_type_window.png" width="500"></p>
+<p>Done!!</p>
+<h4>CLI mode</h4>
+<p>Using the command line interface all you need is run this:</p>
+<pre class="code literal-block"><span></span>gmsh mesh_test.geo -2 -format msh2
+</pre>
+
+
+<h4>Script</h4>
+<p>Just put this <code>Mesh.MshFileVersion = 2.2;</code> into <code>*.geo</code> script  file.</p>
+<h4>Other way</h4>
+<p>Using this mode, gmsh will <strong>always</strong> save in msh format 2.2. All you need is add this lines:</p>
+<pre class="code literal-block"><span></span>Mesh.Format <span class="o">=</span> <span class="m">1</span><span class="p">;</span> // msh output format
+Mesh.MshFileVersion <span class="o">=</span> <span class="m">2</span>.2<span class="p">;</span> // Version of the MSH file format to use
+</pre>
+
+
+<p>Into <code>.gmshrc</code> file, by this command:</p>
+<pre class="code literal-block"><span></span><span class="nb">echo</span> <span class="s2">"Mesh.Format = 1; // msh output format</span>
+<span class="s2">Mesh.MshFileVersion = 2.2; // Version of the MSH file format to use"</span> &gt;&gt; ~/.gmshrc
+</pre>
+
+
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn-1">
+<p>Some steps ilustrated here can also be found on <a href="http://onelab.info/pipermail/gmsh/2018/012422.html">Gmsh: MSH file format</a> <a class="footnote-backref" href="#fnref-1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
 </div>
         </div>
                 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../phase-portrait/" rel="prev" title="Nonlinear dynamics 1: Phase portrait">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../gmsh-exporting-old-msh-format/" rel="next" title="GMSH: exporting old msh format">Next post</a>
+                <a href="../procrastination-cycle/" rel="prev" title="Procrastination cycle">Previous post</a>
             </li>
         </ul>
 <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="jontateixeira",
-            disqus_url="http://jontateixeira.github.io/posts/procrastination-cycle/",
-        disqus_title="Procrastination cycle",
-        disqus_identifier="cache/posts/procrastination-cycle.html",
+            disqus_url="http://jontateixeira.github.io/posts/gmsh-exporting-old-msh-format/",
+        disqus_title="Gmsh: exporting old msh format",
+        disqus_identifier="cache/posts/gmsh-exporting-old-msh-format.html",
         disqus_config = function () {
             this.language = "en";
         };

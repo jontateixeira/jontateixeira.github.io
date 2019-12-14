@@ -79,7 +79,7 @@ Here all trajectories are lines through the origin (steady state of the system),
   :alt: Phase portrait with a= -1 and b=-5.
 
 ======================   ======================  =====================
-parameters values        Phase portrait          Critical point type   
+Parameters values        Phase portrait          Critical point type   
 ======================   ======================  =====================
 a = +1; b = -5           |pp-1|                  saddle point 
 a = +1; b = +5           |pp-2|                  source point 
