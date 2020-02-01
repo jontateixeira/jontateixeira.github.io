@@ -15,11 +15,11 @@
  </url>
  <url>
   <loc>http://jontateixeira.github.io/archive.html</loc>
-  <lastmod>2019-12-14T14:44:00Z</lastmod>
+  <lastmod>2020-02-01T18:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/</loc>
-  <lastmod>2019-12-14T14:44:00Z</lastmod>
+  <lastmod>2020-02-01T18:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/ambiente_de_trabalho/</loc>
@@ -38,6 +38,10 @@
   <lastmod>2019-12-14T14:44:00Z</lastmod>
  </url>
  <url>
+  <loc>http://jontateixeira.github.io/categories/cat_utilities/</loc>
+  <lastmod>2020-02-01T18:00:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://jontateixeira.github.io/categories/chemical-problem/</loc>
   <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
@@ -50,8 +54,16 @@
   <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
+  <loc>http://jontateixeira.github.io/categories/gantt-plot/</loc>
+  <lastmod>2020-02-01T18:00:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://jontateixeira.github.io/categories/gmsh/</loc>
   <lastmod>2019-12-14T14:44:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/categories/gnuplot/</loc>
+  <lastmod>2020-02-01T18:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/lyapunovs-stability/</loc>
@@ -74,6 +86,10 @@
   <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
+  <loc>http://jontateixeira.github.io/categories/plot/</loc>
+  <lastmod>2020-02-01T18:00:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://jontateixeira.github.io/categories/pre-process/</loc>
   <lastmod>2019-12-14T14:44:00Z</lastmod>
  </url>
@@ -86,16 +102,20 @@
   <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
+  <loc>http://jontateixeira.github.io/categories/schedule/</loc>
+  <lastmod>2020-02-01T18:00:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://jontateixeira.github.io/listings/</loc>
   <lastmod>2019-12-14T12:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/listings/phasePortrait.m.html</loc>
-  <lastmod>2019-12-14T13:42:00Z</lastmod>
+  <lastmod>2020-02-01T18:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/listings/post_phase_portrait.m.html</loc>
-  <lastmod>2019-12-14T13:42:00Z</lastmod>
+  <lastmod>2020-02-01T18:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/pages/PEC-1054/pec-1054-syllabus/</loc>
@@ -108,6 +128,10 @@
  <url>
   <loc>http://jontateixeira.github.io/pages/listings-nonlinear/</loc>
   <lastmod>2019-12-14T12:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/posts/gantt-plot-using-gnuplot/</loc>
+  <lastmod>2020-02-01T18:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/posts/gmsh-exporting-old-msh-format/</loc>

@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="old msh format">
+<meta name="description" content="creating gantt plot using gnuplot">
 <meta name="viewport" content="width=device-width">
-<title>Gmsh: exporting old msh format | YHWH Dwells in my heart</title>
+<title>Creating gantt plot using gnuplot | YHWH Dwells in my heart</title>
 <link href="../../assets/css/bitter.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/main.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
@@ -12,7 +12,7 @@
 <link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-<link rel="canonical" href="http://jontateixeira.github.io/posts/gmsh-exporting-old-msh-format/">
+<link rel="canonical" href="http://jontateixeira.github.io/posts/gantt-plot-using-gnuplot/">
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -29,15 +29,15 @@ MathJax.Hub.Config({
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
 </script><meta name="author" content="Jonathan C. Teixeira">
 <meta property="og:site_name" content="YHWH Dwells in my heart">
-<meta property="og:title" content="Gmsh: exporting old msh format">
-<meta property="og:url" content="http://jontateixeira.github.io/posts/gmsh-exporting-old-msh-format/">
-<meta property="og:description" content="old msh format">
+<meta property="og:title" content="Creating gantt plot using gnuplot">
+<meta property="og:url" content="http://jontateixeira.github.io/posts/gantt-plot-using-gnuplot/">
+<meta property="og:description" content="creating gantt plot using gnuplot">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2019-12-14T10:52:15-03:00">
-<meta property="article:tag" content="gmsh">
-<meta property="article:tag" content="mesh">
-<meta property="article:tag" content="msh format">
-<meta property="article:tag" content="pre-process">
+<meta property="article:published_time" content="2019-12-31T09:07:20-03:00">
+<meta property="article:tag" content="gantt plot">
+<meta property="article:tag" content="gnuplot">
+<meta property="article:tag" content="plot">
+<meta property="article:tag" content="schedule">
 </head>
 <body>
     <section class="social"><ul>
@@ -52,11 +52,11 @@ MathJax.Hub.Config({
 
         </ul></section><section class="page-content"><div class="content" rel="main">
     <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">Gmsh: exporting old msh format</h1>
+        <h1 class="p-name entry-title" itemprop="headline name">Creating gantt plot using gnuplot</h1>
 
         <div class="meta">
             <div class="authordate">
-                <time class="timeago" datetime="2019-12-14T10:52:15-03:00">2019-12-14 10:52</time>
+                <time class="timeago" datetime="2019-12-31T09:07:20-03:00">2020-12-31 09:07</time>
             
                       |  
         <a href="index.md" id="sourcelink">Source</a>
@@ -65,76 +65,33 @@ MathJax.Hub.Config({
                     <div itemprop="keywords" class="tags">
         <ul>
         Tags : 
-           <li><a class="tag p-category" href="../../categories/gmsh/" rel="tag">gmsh</a></li>
-           <li><a class="tag p-category" href="../../categories/mesh/" rel="tag">mesh</a></li>
-           <li><a class="tag p-category" href="../../categories/msh-format/" rel="tag">msh format</a></li>
-           <li><a class="tag p-category" href="../../categories/pre-process/" rel="tag">pre-process</a></li>
+           <li><a class="tag p-category" href="../../categories/gantt-plot/" rel="tag">gantt plot</a></li>
+           <li><a class="tag p-category" href="../../categories/gnuplot/" rel="tag">gnuplot</a></li>
+           <li><a class="tag p-category" href="../../categories/plot/" rel="tag">plot</a></li>
+           <li><a class="tag p-category" href="../../categories/schedule/" rel="tag">schedule</a></li>
         </ul>
 </div>
 
         </div>
         <div class="body">
             <div>
-<p>This post is mainly aimed at my colleagues (and students) in the <a href="http://www.lmcg.ufpe.br/">LMCG research group</a> at <a href="https://www.ufpe.br/litpeg">LITPEG</a>. After many people going to me, asking about a bug of <a href="https://bitbucket.org/lmcg_research_group/p3matpac/src/master/">p3matpac preprocessor</a>, I decide to write it. </p>
-<p>After the <a href="http://gmsh.info/">Gmsh</a> 4.0.0 release, Christophe Geuzaine and Jean-François Remacle set the new msh version (msh4) as default msh format (<em>I guess... </em>). After that, new students and colleagues have faced with a following error:</p>
-<pre class="code literal-block"><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">g</span> <span class="p">=</span> <span class="n">gridprocessing</span><span class="p">.</span><span class="n">load_gmsh</span><span class="p">(</span><span class="s">'mesh_test.msh'</span><span class="p">)</span>
-<span class="n">Unknown</span> <span class="n">mesh</span> <span class="n">format</span><span class="p">:</span> <span class="mf">4.1</span> <span class="mi">0</span> <span class="mi">8</span>
-</pre>
-
-
-<p>There are 3 ways to fix this: GUI, CLI, and script <sup id="fnref-1"><a class="footnote-ref" href="#fn-1">1</a></sup>.</p>
-<h4>GUI mode</h4>
-<p>You need to have the following steps:</p>
-<p><strong>1)</strong> Press <code>Ctrl+E</code> shortcut to open the export window:</p>
-<p><img src="../../files/gmsh-exporting-old-msh-format/export_window.png" width="500"></p>
-<p><strong>2)</strong> Select the <code>Version 2 ASCII</code> and OK.</p>
-<p><img src="../../files/gmsh-exporting-old-msh-format/format_type_window.png" width="500"></p>
-<p>Done!!</p>
-<h4>CLI mode</h4>
-<p>Using the command line interface all you need is run this:</p>
-<pre class="code literal-block"><span></span>gmsh mesh_test.geo -2 -format msh2
-</pre>
-
-
-<h4>Script</h4>
-<p>Just put this <code>Mesh.MshFileVersion = 2.2;</code> into <code>*.geo</code> script  file.</p>
-<h4>Other way</h4>
-<p>Using this mode, gmsh will <strong>always</strong> save in msh format 2.2. All you need is add this lines:</p>
-<pre class="code literal-block"><span></span>Mesh.Format <span class="o">=</span> <span class="m">1</span><span class="p">;</span> // msh output format
-Mesh.MshFileVersion <span class="o">=</span> <span class="m">2</span>.2<span class="p">;</span> // Version of the MSH file format to use
-</pre>
-
-
-<p>Into <code>.gmshrc</code> file, by this command:</p>
-<pre class="code literal-block"><span></span><span class="nb">echo</span> <span class="s2">"Mesh.Format = 1; // msh output format</span>
-<span class="s2">Mesh.MshFileVersion = 2.2; // Version of the MSH file format to use"</span> &gt;&gt; ~/.gmshrc
-</pre>
-
-
-<div class="footnote">
-<hr>
-<ol>
-<li id="fn-1">
-<p>Some steps ilustrated here can also be found on <a href="http://onelab.info/pipermail/gmsh/2018/012422.html">Gmsh: MSH file format</a> <a class="footnote-backref" href="#fnref-1" title="Jump back to footnote 1 in the text">↩</a></p>
-</li>
-</ol>
-</div>
+<p>At the beginning of the year, it is the period for writing the proposal (or for the master's thesis or doctoral dissertation), iin some programs, as like the <a href="https://www.ufpe.br/ppgeq">UFPE chemical engineering post-graduate</a>, there is a requirement to prepare a schedule of activities proposed to carry out the work. For this reason, I am writing this post, to help to generate something like a Gantt chart showing when a task has started and ended.</p>
+<p>Gnuplot is a very versatile tool when we want to work with graphics generation. Doing a quick survey of how to generate a Gantt chart using Gnuplot, we find <a href="http://gnuplot.sourceforge.net/demo_5.5/gantt.html">some examples</a> or in <a href="http://wiki.mn.wtb.tue.nl/wonham/gantt.py">Python</a> and <a href="https://fr.overleaf.com/latex/examples/gantt-charts-with-the-pgfgantt-package/jmkwfxrnfxnw">Latex</a>.</p>
+<p>Using some Gnuplot internal functions, we wrote <a href="../../files/gantt-plot-using-gnuplot/schedule_gantt.plt">this script</a> that produces a simple Gantt chart (a schedule of activities):</p>
+<p><img src="../../files/gantt-plot-using-gnuplot/scheduleThesisGantt.png" width="500"></p>
 </div>
         </div>
                 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../procrastination-cycle/" rel="prev" title="Procrastination cycle">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../gantt-plot-using-gnuplot/" rel="next" title="Creating gantt plot using gnuplot">Next post</a>
+                <a href="../gmsh-exporting-old-msh-format/" rel="prev" title="Gmsh: exporting old msh format">Previous post</a>
             </li>
         </ul>
 <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="jontateixeira",
-            disqus_url="http://jontateixeira.github.io/posts/gmsh-exporting-old-msh-format/",
-        disqus_title="Gmsh: exporting old msh format",
-        disqus_identifier="cache/posts/gmsh-exporting-old-msh-format.html",
+            disqus_url="http://jontateixeira.github.io/posts/gantt-plot-using-gnuplot/",
+        disqus_title="Creating gantt plot using gnuplot",
+        disqus_identifier="cache/posts/gantt-plot-using-gnuplot.html",
         disqus_config = function () {
             this.language = "en";
         };
