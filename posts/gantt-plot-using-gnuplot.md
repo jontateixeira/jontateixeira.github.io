@@ -17,4 +17,4 @@ Using some Gnuplot internal functions, we wrote [this script](/files/gantt-plot-
 
 <img src="/files/gantt-plot-using-gnuplot/scheduleThesisGantt.png" width=500>
 
-
+Feel free to use my script and modify it in any way you like!
