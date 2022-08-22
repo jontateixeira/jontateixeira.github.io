@@ -76,8 +76,7 @@ MathJax.Hub.Config({
 
         </div>
         <div class="body">
-            <div>
-<p>Sometimes <em>chemical problems</em> can be answered using knowledge of <em>nonlinear dynamic analysis</em> that is not directly related to chemistry. For example, some information about a complex reactions flow can be gained from the mathematical models of the interspecific competition. Oscillating chemical reactions such as the <a class="reference external" href="https://doi.org/10.1021/ja01352a006">Bray-Liebhafsky reaction</a>, the <a class="reference external" href="https://doi.org/10.1021/ed050p496">Briggs-Rauscher reaction</a> , and the <a class="reference external" href="https://doi.org/10.1063/1.441007">Belousov-Zhabotinski reaction</a> provide wonderful examples of relaxation oscillations (nonlinear behavior) in science. They are often demonstrated in chemistry classes or used to astound the public at university open days. The first experiment of the BZ reaction was conducted by the Russian biochemist Boris Belousov in the 1950s, and the results were not confirmed until as late as 1968 by Zhabotinski (those examples will be addressed ina future post).</p>
+            <p>Sometimes <em>chemical problems</em> can be answered using knowledge of <em>nonlinear dynamic analysis</em> that is not directly related to chemistry. For example, some information about a complex reactions flow can be gained from the mathematical models of the interspecific competition. Oscillating chemical reactions such as the <a class="reference external" href="https://doi.org/10.1021/ja01352a006">Bray-Liebhafsky reaction</a>, the <a class="reference external" href="https://doi.org/10.1021/ed050p496">Briggs-Rauscher reaction</a> , and the <a class="reference external" href="https://doi.org/10.1063/1.441007">Belousov-Zhabotinski reaction</a> provide wonderful examples of relaxation oscillations (nonlinear behavior) in science. They are often demonstrated in chemistry classes or used to astound the public at university open days. The first experiment of the BZ reaction was conducted by the Russian biochemist Boris Belousov in the 1950s, and the results were not confirmed until as late as 1968 by Zhabotinski (those examples will be addressed ina future post).</p>
 <p>In this first post, we going to make a classic <em>phase portrait</em> analysis, considering non-isothermal <em>CSTR</em> problem, where we going to identify <strong>multiplicity steady-state</strong>. Due to the nonlinear behavior of chemical systems (strongly linked with the <a class="reference external" href="https://en.wikipedia.org/wiki/Arrhenius_equation">Arrhenius equation</a>), the existence of multiplicity steady-state is often found when we are modelling or simulating a chemical system, sometimes we come across this behavior, experimentally.</p>
 <p>Before we get started, let's define critical points (steady-state for engineering chemical accent) and how to classify them. First start with one of the simplest systems, a homogeneous linear system. Such a system has the form:</p>
 <div class="math">
@@ -113,17 +112,10 @@ x' &amp;= ax \\
 y' &amp;= b(x + y )
 \end{align*}
 </div>
-<p>which has as critical point in the origin, and the eigenvalues of Jacobian: <span class="math">\(\mathbf{J} = \begin{bmatrix} a &amp; 0 \\ b &amp; b\end{bmatrix}\)</span> are a and b. If <span class="math">\(a= -1; b=-5\)</span> the phase portrait <a class="footnote-reference brackets" href="#id2" id="id1">1</a> looks like this:</p>
-<div class="figure">
-<img alt="Phase portrait with a= -1 and b=-5." src="../../files/nonlinear-dynamic/phase_portrait_linear.png" style="width: 700px; height: 500px;"><p class="caption">Phase portrait with a= -1 and b=-5.</p>
-</div>
-<p>Here all trajectories are lines through the origin (steady state of the system), this behavior is typically to <strong>attractor critical points</strong>. Others trajectories are ilustraited in Table below, with differents values for a and b:</p>
+<p>which has as critical point in the origin, and the eigenvalues of Jacobian: <span class="math">\(\mathbf{J} = \begin{bmatrix} a &amp; 0 \\ b &amp; b\end{bmatrix}\)</span> are a and b. If <span class="math">\(a= -1; b=-5\)</span> the phase portrait <a class="footnote-reference brackets" href="#footnote-1" id="footnote-reference-1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> looks like this:</p>
+<figure><img alt="Phase portrait with a= -1 and b=-5." src="../../files/nonlinear-dynamic/phase_portrait_linear.png" style="width: 700px; height: 500px;"><figcaption><p>Phase portrait with a= -1 and b=-5.</p>
+</figcaption></figure><p>Here all trajectories are lines through the origin (steady state of the system), this behavior is typically to <strong>attractor critical points</strong>. Others trajectories are ilustraited in Table below, with differents values for a and b:</p>
 <table>
-<colgroup>
-<col style="width: 34%">
-<col style="width: 34%">
-<col style="width: 32%">
-</colgroup>
 <thead><tr>
 <th class="head"><p>Parameters values</p></th>
 <th class="head"><p>Phase portrait</p></th>
@@ -148,8 +140,7 @@ we will show how the mathematical suites allow one to determine the critical poi
 1. Calculate the critical points (steady-states) on a phase plane, or solving the corresponding algebraic equation set (<span class="math">\(\mathbf{A}\mathbf{x}=0\)</span>);
 2. Compute the Jacobian matrix for the system using the critical points coordinates (<span class="math">\(\mathbf{J}(\mathbf{x0})\)</span>);
 3. Find the eigenvalues of the latter matrix, to establish the critical point type and the stability of the stationary state.</p>
-<div class="section" id="non-isothermal-reactor-problem">
-<h2>Non-isothermal reactor problem</h2>
+<section id="non-isothermal-reactor-problem"><h2>Non-isothermal reactor problem</h2>
 <p>Lets us consider the steady-state operation of a CSTR under non-isothermal conditions. If an exothermic reaction takes place in an isolated system (i.e. adiabatic reactor, absent of the heat exchange), a temperature will apparently increase over time, for example, hydrolysis of Propylene Glycol. The rate of this increase depends both on the kinetic parameters (rate constant) and on the thermodynamic properties of the system (thermal conditions of the reaction, heat capacity). For a well-mixed tank reactor, where a single first-order reaction:
 A + B → C occurs, the mathematical model is described by this set of equations:</p>
 <div class="math">
@@ -167,12 +158,7 @@ A + B → C occurs, the mathematical model is described by this set of equations
 </div>
 <p>with: <span class="math">\(G = \frac{\Delta H_{rx}}{\rho C_p |_{mx}}\)</span>.</p>
 <p>Modeling the system of ODEs using the initial parameters:</p>
-<table>
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<tbody>
+<table><tbody>
 <tr>
 <td><p><span class="math">\(G\)</span></p></td>
 <td><p><span class="math">\(90.3\)</span></p></td>
@@ -197,8 +183,7 @@ A + B → C occurs, the mathematical model is described by this set of equations
 <td><p><span class="math">\(T_o\)</span></p></td>
 <td><p>250</p></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>We can find a stationary state through the phase portrait, from several initial conditions as ilustraited following:</p>
 <img alt="/files/nonlinear-dynamic/phase_portrait_nonlinear_01.png" src="../../files/nonlinear-dynamic/phase_portrait_nonlinear_01.png" style="width: 700px; height: 500px;"><p>We can see that the steady-state (1.499, 250.015) is an <em>attractor critical point</em>, because all phase path toward it. The stationary state is linked to the thermal stability of the reactor (in the current case) and consequently with the convertion, that in this case is very slow. In order to confirm the attraction behavior, we analyze the Jacobian of the system using the critical point:</p>
 <div class="math">
@@ -214,12 +199,6 @@ A + B → C occurs, the mathematical model is described by this set of equations
 Such situation is illustrated the animation below</p>
 <img alt="/files/nonlinear-dynamic/phase_portrait.gif" src="../../files/nonlinear-dynamic/phase_portrait.gif" style="width: 700px; height: 500px;"><p>When we change the input reagent temperature, we saw the presence of multiple steady-state (red square). In these cases (@ 322 and 331), the animation shows that two of the three possible stationary states are stable: for them the Jacobian matrix eigenvalues are real and of the same sign (stable point). The third steady-state has Jacobian eigenvalues real, but with signs opposite (saddle point).</p>
 <table>
-<colgroup>
-<col style="width: 15%">
-<col style="width: 20%">
-<col style="width: 45%">
-<col style="width: 20%">
-</colgroup>
 <thead><tr>
 <th class="head"><p><span class="math">\(T_o\)</span></p></th>
 <th class="head"><p><span class="math">\(C_A, T\)</span></p></th>
@@ -264,16 +243,12 @@ Such situation is illustrated the animation below</p>
 <p>This example by no means covers all possible problems of chemical reactor kinetics as well as other differential models for chemical-engineering processes, on which the nonlinear dynamic can be applied. In the next post, we'll be shown how to make a bifurcation diagram through <a class="reference external" href="https://sourceforge.net/projects/matcont/">software MatCont</a>.</p>
 <hr class="docutils">
 <blockquote>
-<dl class="footnote brackets">
-<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd>
+<aside class="footnote brackets" id="footnote-1" role="note"><span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#footnote-reference-1">1</a><span class="fn-bracket">]</span></span>
 <p>all phase portrait and images were plotted using the function <a class="reference external" href="../../pages/listings-nonlinear/">phasePortrait</a></p>
-</dd>
-</dl>
+</aside>
 </blockquote>
+</section>
 </div>
-</div>
-        </div>
                 <ul class="pager hidden-print">
 <li class="next">
                 <a href="../procrastination-cycle/" rel="next" title="Procrastination cycle">Next post</a>
@@ -299,7 +274,7 @@ Such situation is illustrated the animation below</p>
 
 
     </div>
-                    <footer id="footer"><p>Contents © 2020         <a href="mailto:jonta.teixeira@gmail.com">Jonathan C. Teixeira</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"></a><br></p>
+                    <footer id="footer"><p>Contents © 2022         <a href="mailto:jonta.teixeira@gmail.com">Jonathan C. Teixeira</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"></a><br></p>
             
         </footer>
 </div>

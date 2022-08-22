@@ -49,10 +49,10 @@ MathJax.Hub.Config({
             <h1 class="title"><a href="posts/gantt-plot-using-gnuplot/">Creating gantt plot using gnuplot</a></h1>
             <div class="meta">
                 <div class="authordate">
-                    <time class="timeago" datetime="2019-12-31T09:07:20-03:00">2020-12-31 09:07</time>
+                    <time class="timeago" datetime="2019-12-31T09:07:20-03:00">2019-12-31 09:07</time>
 </div>
                 <div class="stats">
-                                <a href="posts/gantt-plot-using-gnuplot/#disqus_thread" data-disqus-identifier="cache/posts/gantt-plot-using-gnuplot.html">Comments</a>
+                            <a href="posts/gantt-plot-using-gnuplot/#disqus_thread" data-disqus-identifier="cache/posts/gantt-plot-using-gnuplot.html">Comments</a>
 
 
                 </div>
@@ -68,13 +68,11 @@ MathJax.Hub.Config({
 
             </div>
             <div class="body">
-                <div>
-<p>At the beginning of the year, it is the period for writing the proposal (or for the master's thesis or doctoral dissertation), iin some programs, as like the <a href="https://www.ufpe.br/ppgeq">UFPE chemical engineering post-graduate</a>, there is a requirement to prepare a schedule of activities proposed to carry out the work. For this reason, I am writing this post, to help to generate something like a Gantt chart showing when a task has started and ended.</p>
+                <p>At the beginning of the year, it is the period for writing the proposal (or for the master's thesis or doctoral dissertation), iin some programs, as like the <a href="https://www.ufpe.br/ppgeq">UFPE chemical engineering post-graduate</a>, there is a requirement to prepare a schedule of activities proposed to carry out the work. For this reason, I am writing this post, to help to generate something like a Gantt chart showing when a task has started and ended.</p>
 <p>Gnuplot is a very versatile tool when we want to work with graphics generation. Doing a quick survey of how to generate a Gantt chart using Gnuplot, we find <a href="http://gnuplot.sourceforge.net/demo_5.5/gantt.html">some examples</a> or in <a href="http://wiki.mn.wtb.tue.nl/wonham/gantt.py">Python</a> and <a href="https://fr.overleaf.com/latex/examples/gantt-charts-with-the-pgfgantt-package/jmkwfxrnfxnw">Latex</a>.</p>
 <p>Using some Gnuplot internal functions, we wrote <a href="files/gantt-plot-using-gnuplot/schedule_gantt.plt">this script</a> that produces a simple Gantt chart (a schedule of activities):</p>
 <p><img src="files/gantt-plot-using-gnuplot/scheduleThesisGantt.png" width="500"></p>
 <p>Feel free to use my script and modify it in any way you like!</p>
-</div>
             </div>
         </div>
         <div class="post">
@@ -84,7 +82,7 @@ MathJax.Hub.Config({
                     <time class="timeago" datetime="2019-12-14T10:52:15-03:00">2019-12-14 10:52</time>
 </div>
                 <div class="stats">
-                                <a href="posts/gmsh-exporting-old-msh-format/#disqus_thread" data-disqus-identifier="cache/posts/gmsh-exporting-old-msh-format.html">Comments</a>
+                            <a href="posts/gmsh-exporting-old-msh-format/#disqus_thread" data-disqus-identifier="cache/posts/gmsh-exporting-old-msh-format.html">Comments</a>
 
 
                 </div>
@@ -100,15 +98,13 @@ MathJax.Hub.Config({
 
             </div>
             <div class="body">
-                <div>
-<p>This post is mainly aimed at my colleagues (and students) in the <a href="http://www.lmcg.ufpe.br/">LMCG research group</a> at <a href="https://www.ufpe.br/litpeg">LITPEG</a>. After many people going to me, asking about a bug of <a href="https://bitbucket.org/lmcg_research_group/p3matpac/src/master/">p3matpac preprocessor</a>, I decide to write it. </p>
+                <p>This post is mainly aimed at my colleagues (and students) in the <a href="http://www.lmcg.ufpe.br/">LMCG research group</a> at <a href="https://www.ufpe.br/litpeg">LITPEG</a>. After many people going to me, asking about a bug of <a href="https://bitbucket.org/lmcg_research_group/p3matpac/src/master/">p3matpac preprocessor</a>, I decide to write it. </p>
 <p>After the <a href="http://gmsh.info/">Gmsh</a> 4.0.0 release, Christophe Geuzaine and Jean-François Remacle set the new msh version (msh4) as default msh format (<em>I guess... </em>). After that, new students and colleagues have faced with a following error:</p>
-<pre class="code literal-block"><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">g</span> <span class="p">=</span> <span class="n">gridprocessing</span><span class="p">.</span><span class="n">load_gmsh</span><span class="p">(</span><span class="s">'mesh_test.msh'</span><span class="p">)</span>
-<span class="n">Unknown</span> <span class="n">mesh</span> <span class="n">format</span><span class="p">:</span> <span class="mf">4.1</span> <span class="mi">0</span> <span class="mi">8</span>
-</pre>
+<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">gridprocessing</span><span class="p">.</span><span class="n">load_gmsh</span><span class="p">(</span><span class="s">'mesh_test.msh'</span><span class="p">)</span><span class="w"></span>
+<span class="n">Unknown</span><span class="w"> </span><span class="s">mesh</span><span class="w"> </span><span class="s">format:</span><span class="w"> </span><span class="s">4.1</span><span class="w"> </span><span class="s">0</span><span class="w"> </span><span class="s">8</span><span class="w"></span>
+</pre></div>
 
-
-<p>There are 3 ways to fix this: GUI, CLI, and script <sup id="fnref-1"><a class="footnote-ref" href="posts/gmsh-exporting-old-msh-format/#fn-1">1</a></sup>.</p>
+<p>There are 3 ways to fix this: GUI, CLI, and script <sup id="fnref:1"><a class="footnote-ref" href="posts/gmsh-exporting-old-msh-format/#fn:1">1</a></sup>.</p>
 <h4>GUI mode</h4>
 <p>You need to have the following steps:</p>
 <p><strong>1)</strong> Press <code>Ctrl+E</code> shortcut to open the export window:</p>
@@ -118,33 +114,29 @@ MathJax.Hub.Config({
 <p>Done!!</p>
 <h4>CLI mode</h4>
 <p>Using the command line interface all you need is run this:</p>
-<pre class="code literal-block"><span></span>gmsh mesh_test.geo -2 -format msh2
-</pre>
-
+<div class="code"><pre class="code literal-block">gmsh mesh_test.geo -2 -format msh2
+</pre></div>
 
 <h4>Script</h4>
 <p>Just put this <code>Mesh.MshFileVersion = 2.2;</code> into <code>*.geo</code> script  file.</p>
 <h4>Other way</h4>
 <p>Using this mode, gmsh will <strong>always</strong> save in msh format 2.2. All you need is add this lines:</p>
-<pre class="code literal-block"><span></span>Mesh.Format <span class="o">=</span> <span class="m">1</span><span class="p">;</span> // msh output format
+<div class="code"><pre class="code literal-block">Mesh.Format <span class="o">=</span> <span class="m">1</span><span class="p">;</span> // msh output format
 Mesh.MshFileVersion <span class="o">=</span> <span class="m">2</span>.2<span class="p">;</span> // Version of the MSH file format to use
-</pre>
-
+</pre></div>
 
 <p>Into <code>.gmshrc</code> file, by this command:</p>
-<pre class="code literal-block"><span></span><span class="nb">echo</span> <span class="s2">"Mesh.Format = 1; // msh output format</span>
+<div class="code"><pre class="code literal-block"><span class="nb">echo</span> <span class="s2">"Mesh.Format = 1; // msh output format</span>
 <span class="s2">Mesh.MshFileVersion = 2.2; // Version of the MSH file format to use"</span> &gt;&gt; ~/.gmshrc
-</pre>
-
+</pre></div>
 
 <div class="footnote">
 <hr>
 <ol>
-<li id="fn-1">
-<p>Some steps ilustrated here can also be found on <a href="http://onelab.info/pipermail/gmsh/2018/012422.html">Gmsh: MSH file format</a> <a class="footnote-backref" href="posts/gmsh-exporting-old-msh-format/#fnref-1" title="Jump back to footnote 1 in the text">↩</a></p>
+<li id="fn:1">
+<p>Some steps ilustrated here can also be found on <a href="http://onelab.info/pipermail/gmsh/2018/012422.html">Gmsh: MSH file format</a> <a class="footnote-backref" href="posts/gmsh-exporting-old-msh-format/#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 </ol>
-</div>
 </div>
             </div>
         </div>
@@ -155,7 +147,7 @@ Mesh.MshFileVersion <span class="o">=</span> <span class="m">2</span>.2<span cla
                     <time class="timeago" datetime="2019-12-05T14:30:30-03:00">2019-12-05 14:30</time>
 </div>
                 <div class="stats">
-                                <a href="posts/procrastination-cycle/#disqus_thread" data-disqus-identifier="cache/posts/procrastination-cycle.html">Comments</a>
+                            <a href="posts/procrastination-cycle/#disqus_thread" data-disqus-identifier="cache/posts/procrastination-cycle.html">Comments</a>
 
 
                 </div>
@@ -171,8 +163,7 @@ Mesh.MshFileVersion <span class="o">=</span> <span class="m">2</span>.2<span cla
 
             </div>
             <div class="body">
-                <div>
-<h3>O ciclo da procrastinação.</h3>
+                <h3>O ciclo da procrastinação.</h3>
 <p>Após uma reunião com o seu chefe (ou orientador), o mesmo lhe dá um prazo de 1 mês para entregar aquele projeto. No primeiro momento você diz: </p>
 <p>- Puxa, 1 mês é bastante tempo, vou dar conta fácil!</p>
 <p>Aí você começa o projeto de maneira bem caprichosa. No meio do caminho, você dá uma pausa para ver as notícias do dia, ver aquele programa que você perdeu ontem... e quando se dá conta, já perdeu mais de 2 horas.</p>
@@ -184,7 +175,6 @@ Mesh.MshFileVersion <span class="o">=</span> <span class="m">2</span>.2<span cla
 <p>Você já parou para analisar seu dia a dia no trabalho?
 Você faz suas tarefas agora ou sempre deixa para depois?</p>
 <p>Às vezes, mesmo sem saber, você está praticando o tão vicioso ciclo da procrastinação... Isso pode explicar a baixa produtividade de bons profissionais!</p>
-</div>
             </div>
         </div>
         <div class="post">
@@ -194,7 +184,7 @@ Você faz suas tarefas agora ou sempre deixa para depois?</p>
                     <time class="timeago" datetime="2019-11-05T05:43:02-03:00">2019-11-05 05:43</time>
 </div>
                 <div class="stats">
-                                <a href="posts/phase-portrait/#disqus_thread" data-disqus-identifier="cache/posts/phase-portrait.html">Comments</a>
+                            <a href="posts/phase-portrait/#disqus_thread" data-disqus-identifier="cache/posts/phase-portrait.html">Comments</a>
 
 
                 </div>
@@ -211,8 +201,7 @@ Você faz suas tarefas agora ou sempre deixa para depois?</p>
 
             </div>
             <div class="body">
-                <div>
-<p>Sometimes <em>chemical problems</em> can be answered using knowledge of <em>nonlinear dynamic analysis</em> that is not directly related to chemistry. For example, some information about a complex reactions flow can be gained from the mathematical models of the interspecific competition. Oscillating chemical reactions such as the <a class="reference external" href="https://doi.org/10.1021/ja01352a006">Bray-Liebhafsky reaction</a>, the <a class="reference external" href="https://doi.org/10.1021/ed050p496">Briggs-Rauscher reaction</a> , and the <a class="reference external" href="https://doi.org/10.1063/1.441007">Belousov-Zhabotinski reaction</a> provide wonderful examples of relaxation oscillations (nonlinear behavior) in science. They are often demonstrated in chemistry classes or used to astound the public at university open days. The first experiment of the BZ reaction was conducted by the Russian biochemist Boris Belousov in the 1950s, and the results were not confirmed until as late as 1968 by Zhabotinski (those examples will be addressed ina future post).</p>
+                <p>Sometimes <em>chemical problems</em> can be answered using knowledge of <em>nonlinear dynamic analysis</em> that is not directly related to chemistry. For example, some information about a complex reactions flow can be gained from the mathematical models of the interspecific competition. Oscillating chemical reactions such as the <a class="reference external" href="https://doi.org/10.1021/ja01352a006">Bray-Liebhafsky reaction</a>, the <a class="reference external" href="https://doi.org/10.1021/ed050p496">Briggs-Rauscher reaction</a> , and the <a class="reference external" href="https://doi.org/10.1063/1.441007">Belousov-Zhabotinski reaction</a> provide wonderful examples of relaxation oscillations (nonlinear behavior) in science. They are often demonstrated in chemistry classes or used to astound the public at university open days. The first experiment of the BZ reaction was conducted by the Russian biochemist Boris Belousov in the 1950s, and the results were not confirmed until as late as 1968 by Zhabotinski (those examples will be addressed ina future post).</p>
 <p>In this first post, we going to make a classic <em>phase portrait</em> analysis, considering non-isothermal <em>CSTR</em> problem, where we going to identify <strong>multiplicity steady-state</strong>. Due to the nonlinear behavior of chemical systems (strongly linked with the <a class="reference external" href="https://en.wikipedia.org/wiki/Arrhenius_equation">Arrhenius equation</a>), the existence of multiplicity steady-state is often found when we are modelling or simulating a chemical system, sometimes we come across this behavior, experimentally.</p>
 <p>Before we get started, let's define critical points (steady-state for engineering chemical accent) and how to classify them. First start with one of the simplest systems, a homogeneous linear system. Such a system has the form:</p>
 <div class="math">
@@ -248,17 +237,10 @@ x' &amp;= ax \\
 y' &amp;= b(x + y )
 \end{align*}
 </div>
-<p>which has as critical point in the origin, and the eigenvalues of Jacobian: <span class="math">\(\mathbf{J} = \begin{bmatrix} a &amp; 0 \\ b &amp; b\end{bmatrix}\)</span> are a and b. If <span class="math">\(a= -1; b=-5\)</span> the phase portrait <a class="footnote-reference brackets" href="posts/phase-portrait/#id2" id="id1">1</a> looks like this:</p>
-<div class="figure">
-<img alt="Phase portrait with a= -1 and b=-5." src="files/nonlinear-dynamic/phase_portrait_linear.png" style="width: 700px; height: 500px;"><p class="caption">Phase portrait with a= -1 and b=-5.</p>
-</div>
-<p>Here all trajectories are lines through the origin (steady state of the system), this behavior is typically to <strong>attractor critical points</strong>. Others trajectories are ilustraited in Table below, with differents values for a and b:</p>
+<p>which has as critical point in the origin, and the eigenvalues of Jacobian: <span class="math">\(\mathbf{J} = \begin{bmatrix} a &amp; 0 \\ b &amp; b\end{bmatrix}\)</span> are a and b. If <span class="math">\(a= -1; b=-5\)</span> the phase portrait <a class="footnote-reference brackets" href="posts/phase-portrait/#footnote-1" id="footnote-reference-1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> looks like this:</p>
+<figure><img alt="Phase portrait with a= -1 and b=-5." src="files/nonlinear-dynamic/phase_portrait_linear.png" style="width: 700px; height: 500px;"><figcaption><p>Phase portrait with a= -1 and b=-5.</p>
+</figcaption></figure><p>Here all trajectories are lines through the origin (steady state of the system), this behavior is typically to <strong>attractor critical points</strong>. Others trajectories are ilustraited in Table below, with differents values for a and b:</p>
 <table>
-<colgroup>
-<col style="width: 34%">
-<col style="width: 34%">
-<col style="width: 32%">
-</colgroup>
 <thead><tr>
 <th class="head"><p>Parameters values</p></th>
 <th class="head"><p>Phase portrait</p></th>
@@ -283,8 +265,7 @@ we will show how the mathematical suites allow one to determine the critical poi
 1. Calculate the critical points (steady-states) on a phase plane, or solving the corresponding algebraic equation set (<span class="math">\(\mathbf{A}\mathbf{x}=0\)</span>);
 2. Compute the Jacobian matrix for the system using the critical points coordinates (<span class="math">\(\mathbf{J}(\mathbf{x0})\)</span>);
 3. Find the eigenvalues of the latter matrix, to establish the critical point type and the stability of the stationary state.</p>
-<div class="section" id="non-isothermal-reactor-problem">
-<h2>Non-isothermal reactor problem</h2>
+<section id="non-isothermal-reactor-problem"><h2>Non-isothermal reactor problem</h2>
 <p>Lets us consider the steady-state operation of a CSTR under non-isothermal conditions. If an exothermic reaction takes place in an isolated system (i.e. adiabatic reactor, absent of the heat exchange), a temperature will apparently increase over time, for example, hydrolysis of Propylene Glycol. The rate of this increase depends both on the kinetic parameters (rate constant) and on the thermodynamic properties of the system (thermal conditions of the reaction, heat capacity). For a well-mixed tank reactor, where a single first-order reaction:
 A + B → C occurs, the mathematical model is described by this set of equations:</p>
 <div class="math">
@@ -302,12 +283,7 @@ A + B → C occurs, the mathematical model is described by this set of equations
 </div>
 <p>with: <span class="math">\(G = \frac{\Delta H_{rx}}{\rho C_p |_{mx}}\)</span>.</p>
 <p>Modeling the system of ODEs using the initial parameters:</p>
-<table>
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<tbody>
+<table><tbody>
 <tr>
 <td><p><span class="math">\(G\)</span></p></td>
 <td><p><span class="math">\(90.3\)</span></p></td>
@@ -332,8 +308,7 @@ A + B → C occurs, the mathematical model is described by this set of equations
 <td><p><span class="math">\(T_o\)</span></p></td>
 <td><p>250</p></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>We can find a stationary state through the phase portrait, from several initial conditions as ilustraited following:</p>
 <img alt="/files/nonlinear-dynamic/phase_portrait_nonlinear_01.png" src="files/nonlinear-dynamic/phase_portrait_nonlinear_01.png" style="width: 700px; height: 500px;"><p>We can see that the steady-state (1.499, 250.015) is an <em>attractor critical point</em>, because all phase path toward it. The stationary state is linked to the thermal stability of the reactor (in the current case) and consequently with the convertion, that in this case is very slow. In order to confirm the attraction behavior, we analyze the Jacobian of the system using the critical point:</p>
 <div class="math">
@@ -349,12 +324,6 @@ A + B → C occurs, the mathematical model is described by this set of equations
 Such situation is illustrated the animation below</p>
 <img alt="/files/nonlinear-dynamic/phase_portrait.gif" src="files/nonlinear-dynamic/phase_portrait.gif" style="width: 700px; height: 500px;"><p>When we change the input reagent temperature, we saw the presence of multiple steady-state (red square). In these cases (@ 322 and 331), the animation shows that two of the three possible stationary states are stable: for them the Jacobian matrix eigenvalues are real and of the same sign (stable point). The third steady-state has Jacobian eigenvalues real, but with signs opposite (saddle point).</p>
 <table>
-<colgroup>
-<col style="width: 15%">
-<col style="width: 20%">
-<col style="width: 45%">
-<col style="width: 20%">
-</colgroup>
 <thead><tr>
 <th class="head"><p><span class="math">\(T_o\)</span></p></th>
 <th class="head"><p><span class="math">\(C_A, T\)</span></p></th>
@@ -399,19 +368,15 @@ Such situation is illustrated the animation below</p>
 <p>This example by no means covers all possible problems of chemical reactor kinetics as well as other differential models for chemical-engineering processes, on which the nonlinear dynamic can be applied. In the next post, we'll be shown how to make a bifurcation diagram through <a class="reference external" href="https://sourceforge.net/projects/matcont/">software MatCont</a>.</p>
 <hr class="docutils">
 <blockquote>
-<dl class="footnote brackets">
-<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="posts/phase-portrait/#id1">1</a></span></dt>
-<dd>
+<aside class="footnote brackets" id="footnote-1" role="note"><span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="posts/phase-portrait/#footnote-reference-1">1</a><span class="fn-bracket">]</span></span>
 <p>all phase portrait and images were plotted using the function <a class="reference external" href="pages/listings-nonlinear/">phasePortrait</a></p>
-</dd>
-</dl>
+</aside>
 </blockquote>
+</section>
 </div>
-</div>
-            </div>
         </div>
     
-                   <script>var disqus_shortname="jontateixeira";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><footer id="footer"><p>Contents © 2020         <a href="mailto:jonta.teixeira@gmail.com">Jonathan C. Teixeira</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"></a><br></p>
+               <script>var disqus_shortname="jontateixeira";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><footer id="footer"><p>Contents © 2022         <a href="mailto:jonta.teixeira@gmail.com">Jonathan C. Teixeira</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"></a><br></p>
             
         </footer>
 </div>
