@@ -2,25 +2,25 @@
 .. title: PEC 1054 - Métodos Matemáticos
 .. slug: pec-1054-syllabus
 .. date: 2019-07-02 13:00:00 UTC-03:00
-.. template: 
+.. template:
 .. description: PEC 1054 - Métodos matemáticos syllabus page
 -->
 
-**Instructor:** Leonardo J. N. Guimarães & Jonathan C. Teixeira 
+**Instructor:** Leonardo J. N. Guimarães & Jonathan C. Teixeira
 
-**Office:** [LITPEG building](https://www.ufpe.br/litpeg) 5th floor rooms 512A & 514 
+**Office:** [LITPEG building](https://www.ufpe.br/litpeg) 5th floor rooms 512A & 514
 
-**Phone:** 
+**Phone:**
 
-**Email:** [leonardo@ufpe.br](mailto:leonardo@ufpe.br) or [jonathan@lmcg.ufpe.br](mailto:jonathan@lmcg.ufpe.br) 
+**Email:** [leonardo@ufpe.br](mailto:leonardo@ufpe.br) or [jonathan@lmcg.ufpe.br](mailto:jonathan@lmcg.ufpe.br)
 
-**Class Location:** Sala de aula da pós-graduação 
+**Class Location:** Sala de aula da pós-graduação
 
-**Class Time:** W-Th 14:00 - 16:00 PM 
+**Class Time:** W-Th 14:00 - 16:00 PM
 
-**Office Hours:** M 10:00 AM - 11:30 PM e com hora marcada (de preferência). 
+**Office Hours:** M 10:00 AM - 11:30 PM e com hora marcada (de preferência).
 
-**Course Website:** 
+**Course Website:**
 
 **Course Description**: Cálculo vetorial; dependência linear, base e funções reais; matrizes; problemas de autovalores e auto-vetores; introdução a tensores; equações diferenciais ordinárias e parciais; soluções numéricas de equações diferenciais. Restrito a estudantes admitidos na seleção do programa de pós-graduação em engenharia civil ([PPGEC](https://www.ufpe.br/poscivil)).
 
