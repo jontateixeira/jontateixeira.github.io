@@ -65,7 +65,7 @@
 
 A lista de exercícios são referentes às seções dos Problemas do *livro texto*
 
-* LE-1: Estática do Ponto Material
+* LE-1: Vetores força
 
     2.1, 2.3, 2.4, 2.6, 2.8, 2.13, 2.18, 2.27, 2.31, 2.33, 2.50, 2.53, 2.61, 2.69, 2.78, 2.83, 2.91, 2.96, 2.101, 2.103, 2.113, 2.121
 
