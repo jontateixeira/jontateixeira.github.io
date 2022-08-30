@@ -3,7 +3,7 @@
 .. slug: epet-023-syllabus
 .. date: 2022-08-21 19:32:09 UTC-03:00
 .. tags: UFAL, Estática, Mecânica Geral 1, Mecânica dos Sólidos 1
-.. description:
+.. description: syllabus of EPET-023
 -->
 
 **Docente:** Jonathan C. Teixeira
@@ -14,7 +14,7 @@
 
 **fone:**
 
-**Email:** [jonta.teixeira@gmail.com](mailto:jonta.teixeira@gmail.com)-->
+**Email:** [jonathan.teixeira@ctec.ufal.br](mailto:jonathan.teixeira@ctec.ufal.br)
 
 **Local das aulas:** Sala de aula A7
 
@@ -23,7 +23,7 @@
 
 **Ementa**: Objetivos da mecânica dos sólidos rígidos e deformáveis; Estática dos corpos rígidos; Caracteristicas geométricas dos corpos.
 
-**Objetivos**: Introduzir e desenvolver comhecimentos da mecânica vetorial newtoniana e das propriedades geométricas dos corpos, visando aplicações em análises de equilíbrio, estabilidade e resistência de sistemas estruturais.
+**Objetivos**: Introduzir e desenvolver comhecimentos da mecânica vetorial newtoniana e das propriedades geométricas dos corpos, visando aplicações em análises de equilíbrio, estabilidade e resistência de sistemas estruturais comuns na engenharia de petróleo.
 
 **Pré-requisitos:** admitidos em EPET-045
 
@@ -103,7 +103,6 @@
     * Teorema dos Eixos Paralelos para uma Área
     * Momentos de Inércia de Áreas Compostas
 
-\
 
 
 **Lista de Exercícios**
