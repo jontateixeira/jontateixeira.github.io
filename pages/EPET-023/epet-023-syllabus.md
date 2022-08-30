@@ -39,70 +39,26 @@
 1. Machado Junior, E. F., *Introdução à Isostática*. São Carlos, EDUSP, 1999.
 1. Martha, L. F., *Análise de Estruturas - Conceitos e Métodos Básicos*. Rio de Janeiro: Campus/Elsevier, 2010.
 
+<!--**Agenda prevista**-->
 
-**Conteúdo Programático:**
+<!--Abaixo está um esboço geral do que pretendo cobrir no curso. Isso está sujeito a alterações com base nas necessidades e preparação dos alunos na classe. Quaisquer atualizações serão publicadas à medida que ocorrerem.-->
 
-1. Introdução à Mecânica Vetorial
-    * Definição e Classificação da Mecânica (Mecânica dos Corpos Rígidos, dos Corpos Deformáveis e dos Fluidos)
-    * História e Princípios Fundamentais da Mecânica
-    * Conceitos de Ponto Material e de Corpo Rígido
-    * Sistemas de Unidades
-
-2. Estática dos Pontos Materiais
-    * Vetores
-        * Grandezas Escalares e Vetoriais
-        * Operações Vetoriais: Adição de Vetores (Regras do Paralelogramo, do Triângulo e do Polígono), Decomposição de Vetores
-        * Representação de Vetores: Cartesiana e Polar, Componentes Cartesianas de um Vetor, Vetores Cartesianos Unitários (Versores), Intensidade de um Vetor, Adição de Vetores, Produto Escalar, Direção de um Vetor.
-    * Forças Coplanares
-        * Resultante de Forças Concorrentes
-        * Componentes de uma Força: Adição de Forças pela Soma das Componentes
-        * Equilíbrio de uma Partícula
-    * Forças Espaciais
-        * Componentes Cartesianas de uma Força
-        * Vetor Força Orientado ao Longo de um Reta
-        * Adição de Forças Concorrentes no Espaço
-        * Equilíbrio de uma Partícula no Espaço
-
-3. Resultantes de Sistemas de Forças
-    * Produto Vetorial de Dois Vetores: Interpretação Geométrica do Produto Vetorial, Produto Vetorial em termos das Componentes Cartesianas
-    * Momento de uma Força em Relação a um Ponto
-        * Formulação Escalar
-        * Formulação Vetorial
-        * Componentes Cartesianas do Momento de uma Força
-        * Teorema de Varignon
-    * Momento de uma Força em Relação a um Eixo Específico
-    * Momento de um Binário
-    * Binários Equivalentes
-    * Decomposição de uma Força dada em uma Força e um Binário (Sistema Força-Binário)
-    * Redução de um Sistema de Forças a uma Força e um Binário
-    * Sistemas Equivalentes de Forças
-    * Casos Particulares de Redução de um Sistema de Forças
-        * Forças Concorrentes
-        * Forças Coplanares
-        * Forças Paralelas
-    * Redução de um Sistema de Forças a um Torsor (**opcional**)
-
-4. Estática dos Corpos Rígidos
-    * Equilíbrio de Corpos Rígidos em Duas Dimensões
-        * Diagrama de Corpo Livre
-        * Equações de Equilíbrio
-        * Reações nos Vínculos
-    * Equilíbrio de Corpos Rígidos em Três Dimensões
-        * Diagrama de Corpo Livre
-        * Equações de Equilíbrio
-        * Reações nos Vínculos
-
-5. Características Geométricas dos Corpos
-    * Centro de Gravidade de um Corpo
-    * Centro de Massa de um Corpo
-    * Centróide ou Centro Geométrico de um: Volume, Área e Linha
-    * Corpos Compostos: Centróide de uma Área Composta, Centróide de uma Linha Composta, e Centróide de um Volume Composto
-    * Momentos de Inércia de Áreas
-    * Momento de Inércia Polar
-    * Raio de Giração de uma Área
-    * Teorema dos Eixos Paralelos para uma Área
-    * Momentos de Inércia de Áreas Compostas
-
+<!--| Aula            | Tópicos             | Observações    |-->
+<!--|-----------------|---------------------|-----------|-->
+<!--| 1 | Introdução à Mecânica Vetorial, Leis de Newtom, Escalares, e Vetores | 1, 2 |-->
+<!--| 2 | Vetores de forças coplanares, adição de vetores, notação vetorial e polar | 2, 3, 4 |-->
+<!--| 3 | Regras do Paralelogramo e do Triângulo para adição de vetores, componentes cartesianos, Vetor resultante de forças 2-D | 5, 6, 7 |-->
+<!--| 4 | Vetor resultante de forças em sistemas não-ortogonais, Intro a vetores de forças 3-D,  Sistema de coordenadas esféricas| 8, 9, 10 |-->
+<!--| 5 | Cosenos diretores e componentes cartesianos, vetor resultante de forças 3-D e e produto escalar | 11, 12, 14 |-->
+<!--| 6 | Estática sobre uma particula, Equilíbrio de uma particula (2-D) | 13, 15, 16, 17 |-->
+<!--| 7 | Equilíbrio de uma particula (cont.), sistemas de forças 3-D | 19, 20, 21 |-->
+<!--| - | **Avaliação**  |  |-->
+<!--| 8 | Intro Momento e torque, Momento formulação escalar e vetorial | 22, 23 |-->
+<!--| 9 | Princípio dos Momentos, Momento sobre um ponto e eixo (3-D) | 24, 25, 26 |-->
+<!--| 10 | Momentos de um binário | 26, 27 |-->
+<!--| 11 | Equilíbrio de corpos rígidos e reações de apoio  | 36, 35, 36 |-->
+<!--| 12 | Equilíbrio e Sistema equivalente de forças  | 34, 35, 36 |-->
+<!--| 13 | Equilíbrio e Sistema equivalente de forças  | 34, 35, 36 |-->
 
 
 **Lista de Exercícios**
@@ -120,17 +76,6 @@ A lista de exercícios são referentes às seções dos Problemas do *livro text
 * LE-3: Resultante de sistemas de forças
 
     F4.1, F4.5, 4.6, 4.8, 4.11, 4.27, 4.33, 4.38, 4.51, 4.55, 4.67, 4.71, 4.80, 4.94, 4.99, 4.103, 4.109, 4.123, 4.127,
-
-
-**Agenda prevista**
-
-Abaixo está um esboço geral do que pretendo cobrir no curso. Isso está sujeito a alterações com base nas necessidades e preparação dos alunos na classe. Quaisquer atualizações serão publicadas à medida que ocorrerem.
-
-| Aula            | Tópico               | Observações    |
-|-----------------|---------------------|-----------|
-| 1 | Introdução à Mecânica Vetorial | |
-| 2 | Escalares, Vetores, Representação e Operações Vetoriais | |
-| 3 | Forças Coplanares, Resultante de Forças Concorrentes,  | |
 
 
 **Grading**
