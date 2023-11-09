@@ -50,37 +50,37 @@ MathJax.Hub.Config({
     <div class="code"><table class="codetable">
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-1"><code data-line-number=" 1"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-1" name="listingsphaseportraitm-1"></a><span class="n">function</span><span class="w"> </span><span class="nf">phasePortrait</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span><span class="w"> </span><span class="n">lb</span><span class="p">,</span><span class="w"> </span><span class="n">ub</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">randomize</span><span class="p">)</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-1" name="listingsphaseportraitm-1"></a><span class="n">function</span><span class="w"> </span><span class="nf">phasePortrait</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span><span class="w"> </span><span class="n">lb</span><span class="p">,</span><span class="w"> </span><span class="n">ub</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">randomize</span><span class="p">)</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-2"><code data-line-number=" 2"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-2" name="listingsphaseportraitm-2"></a><span class="o">%</span><span class="n">Create</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="n">portrait</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">two</span><span class="o">-</span><span class="n">dimensional</span><span class="w"> </span><span class="n">system</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">ode</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-2" name="listingsphaseportraitm-2"></a><span class="o">%</span><span class="n">Create</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="n">portrait</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">two</span><span class="o">-</span><span class="n">dimensional</span><span class="w"> </span><span class="n">system</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">ode</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-3"><code data-line-number=" 3"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-3" name="listingsphaseportraitm-3"></a><span class="o">%</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-3" name="listingsphaseportraitm-3"></a><span class="o">%</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-4"><code data-line-number=" 4"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-4" name="listingsphaseportraitm-4"></a><span class="o">%</span><span class="w"> </span><span class="n">SYNOPSIS</span><span class="o">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-4" name="listingsphaseportraitm-4"></a><span class="o">%</span><span class="w"> </span><span class="n">SYNOPSIS</span><span class="o">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-5"><code data-line-number=" 5"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-5" name="listingsphaseportraitm-5"></a><span class="o">%</span><span class="w">   </span><span class="n">phasePortrait</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span><span class="w"> </span><span class="n">lb</span><span class="p">,</span><span class="w"> </span><span class="n">ub</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">randomize</span><span class="p">)</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-5" name="listingsphaseportraitm-5"></a><span class="o">%</span><span class="w">   </span><span class="n">phasePortrait</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span><span class="w"> </span><span class="n">lb</span><span class="p">,</span><span class="w"> </span><span class="n">ub</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">randomize</span><span class="p">)</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-6"><code data-line-number=" 6"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-6" name="listingsphaseportraitm-6"></a><span class="o">%</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-6" name="listingsphaseportraitm-6"></a><span class="o">%</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-7"><code data-line-number=" 7"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-7" name="listingsphaseportraitm-7"></a><span class="o">%</span><span class="w"> </span><span class="n">PARAMETERS</span><span class="o">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-7" name="listingsphaseportraitm-7"></a><span class="o">%</span><span class="w"> </span><span class="n">PARAMETERS</span><span class="o">:</span>
 </code></td>
 </tr>
 <tr>
@@ -90,17 +90,17 @@ MathJax.Hub.Config({
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-9"><code data-line-number=" 9"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-9" name="listingsphaseportraitm-9"></a><span class="o">%</span><span class="w">   </span><span class="n">lb</span><span class="w">          </span><span class="o">-</span><span class="w"> </span><span class="n">lower</span><span class="w"> </span><span class="n">bound</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="n">portrait</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-9" name="listingsphaseportraitm-9"></a><span class="o">%</span><span class="w">   </span><span class="n">lb</span><span class="w">          </span><span class="o">-</span><span class="w"> </span><span class="n">lower</span><span class="w"> </span><span class="n">bound</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="n">portrait</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-10"><code data-line-number="10"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-10" name="listingsphaseportraitm-10"></a><span class="o">%</span><span class="w">   </span><span class="n">ub</span><span class="w">          </span><span class="o">-</span><span class="w"> </span><span class="n">upper</span><span class="w"> </span><span class="n">bound</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="n">portrait</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-10" name="listingsphaseportraitm-10"></a><span class="o">%</span><span class="w">   </span><span class="n">ub</span><span class="w">          </span><span class="o">-</span><span class="w"> </span><span class="n">upper</span><span class="w"> </span><span class="n">bound</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">phase</span><span class="w"> </span><span class="n">portrait</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-11"><code data-line-number="11"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-11" name="listingsphaseportraitm-11"></a><span class="o">%</span><span class="w">   </span><span class="n">n</span><span class="w">           </span><span class="o">-</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">intial</span><span class="w"> </span><span class="n">condition</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">system</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-11" name="listingsphaseportraitm-11"></a><span class="o">%</span><span class="w">   </span><span class="n">n</span><span class="w">           </span><span class="o">-</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">intial</span><span class="w"> </span><span class="n">condition</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">system</span>
 </code></td>
 </tr>
 <tr>
@@ -110,37 +110,37 @@ MathJax.Hub.Config({
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-13"><code data-line-number="13"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-13" name="listingsphaseportraitm-13"></a><span class="o">%</span><span class="w">                 </span><span class="n">the</span><span class="w"> </span><span class="n">system</span><span class="p">.</span><span class="w"> </span><span class="n">OPTIONAL</span><span class="p">.</span><span class="w">  </span><span class="n">Default</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-13" name="listingsphaseportraitm-13"></a><span class="o">%</span><span class="w">                 </span><span class="n">the</span><span class="w"> </span><span class="n">system</span><span class="p">.</span><span class="w"> </span><span class="n">OPTIONAL</span><span class="p">.</span><span class="w">  </span><span class="n">Default</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-14"><code data-line-number="14"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-14" name="listingsphaseportraitm-14"></a><span class="o">%</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-14" name="listingsphaseportraitm-14"></a><span class="o">%</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-15"><code data-line-number="15"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-15" name="listingsphaseportraitm-15"></a><span class="o">%</span><span class="w"> </span><span class="n">RETURNS</span><span class="o">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-15" name="listingsphaseportraitm-15"></a><span class="o">%</span><span class="w"> </span><span class="n">RETURNS</span><span class="o">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-16"><code data-line-number="16"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-16" name="listingsphaseportraitm-16"></a><span class="o">%</span><span class="w">   </span><span class="n">phase</span><span class="w"> </span><span class="n">portrait</span><span class="w"> </span><span class="n">plot</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-16" name="listingsphaseportraitm-16"></a><span class="o">%</span><span class="w">   </span><span class="n">phase</span><span class="w"> </span><span class="n">portrait</span><span class="w"> </span><span class="n">plot</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-17"><code data-line-number="17"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-17" name="listingsphaseportraitm-17"></a><span class="o">%</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-17" name="listingsphaseportraitm-17"></a><span class="o">%</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-18"><code data-line-number="18"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-18" name="listingsphaseportraitm-18"></a><span class="o">%</span><span class="w"> </span><span class="n">EXAMPLE</span><span class="o">:</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-18" name="listingsphaseportraitm-18"></a><span class="o">%</span><span class="w"> </span><span class="n">EXAMPLE</span><span class="o">:</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-19"><code data-line-number="19"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-19" name="listingsphaseportraitm-19"></a><span class="o">%</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-19" name="listingsphaseportraitm-19"></a><span class="o">%</span>
 </code></td>
 </tr>
 <tr>
@@ -155,27 +155,27 @@ MathJax.Hub.Config({
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-22"><code data-line-number="22"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-22" name="listingsphaseportraitm-22"></a><span class="w">  </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-22" name="listingsphaseportraitm-22"></a><span class="w">  </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-23"><code data-line-number="23"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-23" name="listingsphaseportraitm-23"></a><span class="w">  </span><span class="n">randomize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-23" name="listingsphaseportraitm-23"></a><span class="w">  </span><span class="n">randomize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-24"><code data-line-number="24"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-24" name="listingsphaseportraitm-24"></a><span class="n">elseif</span><span class="w"> </span><span class="n">nargin</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-24" name="listingsphaseportraitm-24"></a><span class="n">elseif</span><span class="w"> </span><span class="n">nargin</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-25"><code data-line-number="25"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-25" name="listingsphaseportraitm-25"></a><span class="w">  </span><span class="n">randomize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-25" name="listingsphaseportraitm-25"></a><span class="w">  </span><span class="n">randomize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-26"><code data-line-number="26"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-26" name="listingsphaseportraitm-26"></a><span class="n">end</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-26" name="listingsphaseportraitm-26"></a><span class="n">end</span>
 </code></td>
 </tr>
 <tr>
@@ -185,12 +185,12 @@ MathJax.Hub.Config({
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-28"><code data-line-number="28"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-28" name="listingsphaseportraitm-28"></a><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-28" name="listingsphaseportraitm-28"></a><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-29"><code data-line-number="29"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-29" name="listingsphaseportraitm-29"></a><span class="n">dx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">abs</span><span class="p">(</span><span class="n">ub</span><span class="o">-</span><span class="n">lb</span><span class="p">)</span><span class="o">/</span><span class="n">num</span><span class="p">;</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-29" name="listingsphaseportraitm-29"></a><span class="n">dx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">abs</span><span class="p">(</span><span class="n">ub</span><span class="o">-</span><span class="n">lb</span><span class="p">)</span><span class="o">/</span><span class="n">num</span><span class="p">;</span>
 </code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ MathJax.Hub.Config({
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-31"><code data-line-number="31"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-31" name="listingsphaseportraitm-31"></a><span class="p">[</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">]</span><span class="o">=</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span><span class="n">dx</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span><span class="n">ub</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">:</span><span class="n">dx</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">:</span><span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-31" name="listingsphaseportraitm-31"></a><span class="p">[</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">]</span><span class="o">=</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span><span class="n">dx</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span><span class="n">ub</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">:</span><span class="n">dx</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">:</span><span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>
 </code></td>
 </tr>
 <tr>
@@ -210,22 +210,22 @@ MathJax.Hub.Config({
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-33"><code data-line-number="33"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-33" name="listingsphaseportraitm-33"></a><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zeros</span><span class="p">(</span><span class="n">numel</span><span class="p">(</span><span class="n">x1</span><span class="p">(</span><span class="o">:</span><span class="p">)),</span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-33" name="listingsphaseportraitm-33"></a><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zeros</span><span class="p">(</span><span class="n">numel</span><span class="p">(</span><span class="n">x1</span><span class="p">(</span><span class="o">:</span><span class="p">)),</span><span class="mi">2</span><span class="p">);</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-34"><code data-line-number="34"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-34" name="listingsphaseportraitm-34"></a><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="n">numel</span><span class="p">(</span><span class="n">x1</span><span class="p">(</span><span class="o">:</span><span class="p">))</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-34" name="listingsphaseportraitm-34"></a><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="n">numel</span><span class="p">(</span><span class="n">x1</span><span class="p">(</span><span class="o">:</span><span class="p">))</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-35"><code data-line-number="35"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-35" name="listingsphaseportraitm-35"></a><span class="w">   </span><span class="n">v</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="o">:</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fun</span><span class="p">([</span><span class="n">x1</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="w"> </span><span class="n">x2</span><span class="p">(</span><span class="n">i</span><span class="p">)]);</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-35" name="listingsphaseportraitm-35"></a><span class="w">   </span><span class="n">v</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="o">:</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fun</span><span class="p">([</span><span class="n">x1</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="w"> </span><span class="n">x2</span><span class="p">(</span><span class="n">i</span><span class="p">)]);</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-36"><code data-line-number="36"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-36" name="listingsphaseportraitm-36"></a><span class="n">end</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-36" name="listingsphaseportraitm-36"></a><span class="n">end</span>
 </code></td>
 </tr>
 <tr>
@@ -235,37 +235,37 @@ MathJax.Hub.Config({
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-38"><code data-line-number="38"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-38" name="listingsphaseportraitm-38"></a><span class="n">figure</span><span class="p">()</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-38" name="listingsphaseportraitm-38"></a><span class="n">figure</span><span class="p">()</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-39"><code data-line-number="39"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-39" name="listingsphaseportraitm-39"></a><span class="n">disp</span><span class="p">(</span><span class="err">'</span><span class="n">vectorial</span><span class="w"> </span><span class="n">field</span><span class="err">'</span><span class="p">)</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-39" name="listingsphaseportraitm-39"></a><span class="n">disp</span><span class="p">(</span><span class="err">'</span><span class="n">vectorial</span><span class="w"> </span><span class="n">field</span><span class="err">'</span><span class="p">)</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-40"><code data-line-number="40"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-40" name="listingsphaseportraitm-40"></a><span class="n">hold</span><span class="w"> </span><span class="n">on</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-40" name="listingsphaseportraitm-40"></a><span class="n">hold</span><span class="w"> </span><span class="n">on</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-41"><code data-line-number="41"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-41" name="listingsphaseportraitm-41"></a><span class="n">quiver</span><span class="p">(</span><span class="n">x1</span><span class="p">(</span><span class="o">:</span><span class="p">),</span><span class="n">x2</span><span class="p">(</span><span class="o">:</span><span class="p">),</span><span class="n">v</span><span class="p">(</span><span class="o">:</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">v</span><span class="p">(</span><span class="o">:</span><span class="p">,</span><span class="mi">2</span><span class="p">));</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-41" name="listingsphaseportraitm-41"></a><span class="n">quiver</span><span class="p">(</span><span class="n">x1</span><span class="p">(</span><span class="o">:</span><span class="p">),</span><span class="n">x2</span><span class="p">(</span><span class="o">:</span><span class="p">),</span><span class="n">v</span><span class="p">(</span><span class="o">:</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">v</span><span class="p">(</span><span class="o">:</span><span class="p">,</span><span class="mi">2</span><span class="p">));</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-42"><code data-line-number="42"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-42" name="listingsphaseportraitm-42"></a><span class="k">if</span><span class="w"> </span><span class="n">randomize</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-42" name="listingsphaseportraitm-42"></a><span class="k">if</span><span class="w"> </span><span class="n">randomize</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-43"><code data-line-number="43"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-43" name="listingsphaseportraitm-43"></a><span class="w">  </span><span class="n">u</span><span class="o">=</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">ub</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="o">*</span><span class="n">rand</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-43" name="listingsphaseportraitm-43"></a><span class="w">  </span><span class="n">u</span><span class="o">=</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">ub</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="o">*</span><span class="n">rand</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-44"><code data-line-number="44"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-44" name="listingsphaseportraitm-44"></a><span class="w">  </span><span class="n">v</span><span class="o">=</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">-</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">rand</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-44" name="listingsphaseportraitm-44"></a><span class="w">  </span><span class="n">v</span><span class="o">=</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">-</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">rand</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
 </code></td>
 </tr>
 <tr>
@@ -275,7 +275,7 @@ MathJax.Hub.Config({
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-46"><code data-line-number="46"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-46" name="listingsphaseportraitm-46"></a><span class="w">  </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">floor</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="mi">4</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-46" name="listingsphaseportraitm-46"></a><span class="w">  </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">floor</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="mi">4</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
 </code></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ MathJax.Hub.Config({
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-49"><code data-line-number="49"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-49" name="listingsphaseportraitm-49"></a><span class="w">  </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">linspace</span><span class="p">(</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-49" name="listingsphaseportraitm-49"></a><span class="w">  </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">linspace</span><span class="p">(</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">n</span><span class="p">);</span>
 </code></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ MathJax.Hub.Config({
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-51"><code data-line-number="51"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-51" name="listingsphaseportraitm-51"></a><span class="n">end</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-51" name="listingsphaseportraitm-51"></a><span class="n">end</span>
 </code></td>
 </tr>
 <tr>
@@ -310,37 +310,37 @@ MathJax.Hub.Config({
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-53"><code data-line-number="53"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-53" name="listingsphaseportraitm-53"></a><span class="n">funcao</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="l">@(</span><span class="n">t</span><span class="p">,</span><span class="n">x</span><span class="l">)</span><span class="w"> </span><span class="n">fun</span><span class="p">([</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">)]);</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-53" name="listingsphaseportraitm-53"></a><span class="n">funcao</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="l">@(</span><span class="n">t</span><span class="p">,</span><span class="n">x</span><span class="l">)</span><span class="w"> </span><span class="n">fun</span><span class="p">([</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">)]);</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-54"><code data-line-number="54"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-54" name="listingsphaseportraitm-54"></a><span class="n">disp</span><span class="p">(</span><span class="err">'</span><span class="n">tracing</span><span class="w"> </span><span class="n">paths</span><span class="w"> </span><span class="p">...</span><span class="err">'</span><span class="p">)</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-54" name="listingsphaseportraitm-54"></a><span class="n">disp</span><span class="p">(</span><span class="err">'</span><span class="n">tracing</span><span class="w"> </span><span class="n">paths</span><span class="w"> </span><span class="p">...</span><span class="err">'</span><span class="p">)</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-55"><code data-line-number="55"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-55" name="listingsphaseportraitm-55"></a><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="n">numel</span><span class="p">(</span><span class="n">u</span><span class="p">)</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-55" name="listingsphaseportraitm-55"></a><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="n">numel</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-56"><code data-line-number="56"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-56" name="listingsphaseportraitm-56"></a><span class="w">    </span><span class="p">[</span><span class="o">~</span><span class="p">,</span><span class="n">sol</span><span class="p">]</span><span class="o">=</span><span class="n">ode45</span><span class="p">(</span><span class="n">funcao</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">],[</span><span class="n">u</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="n">v</span><span class="p">(</span><span class="n">i</span><span class="p">)]);</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-56" name="listingsphaseportraitm-56"></a><span class="w">    </span><span class="p">[</span><span class="o">~</span><span class="p">,</span><span class="n">sol</span><span class="p">]</span><span class="o">=</span><span class="n">ode45</span><span class="p">(</span><span class="n">funcao</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">],[</span><span class="n">u</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="n">v</span><span class="p">(</span><span class="n">i</span><span class="p">)]);</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-57"><code data-line-number="57"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-57" name="listingsphaseportraitm-57"></a><span class="w">    </span><span class="n">plot</span><span class="p">(</span><span class="n">sol</span><span class="p">(</span><span class="o">:</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">sol</span><span class="p">(</span><span class="o">:</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="sc">'k'</span><span class="p">);</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-57" name="listingsphaseportraitm-57"></a><span class="w">    </span><span class="n">plot</span><span class="p">(</span><span class="n">sol</span><span class="p">(</span><span class="o">:</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">sol</span><span class="p">(</span><span class="o">:</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="sc">'k'</span><span class="p">);</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-58"><code data-line-number="58"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-58" name="listingsphaseportraitm-58"></a><span class="n">end</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-58" name="listingsphaseportraitm-58"></a><span class="n">end</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-59"><code data-line-number="59"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-59" name="listingsphaseportraitm-59"></a><span class="n">hold</span><span class="w"> </span><span class="n">off</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-59" name="listingsphaseportraitm-59"></a><span class="n">hold</span><span class="w"> </span><span class="n">off</span>
 </code></td>
 </tr>
 <tr>
@@ -350,16 +350,16 @@ MathJax.Hub.Config({
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-61"><code data-line-number="61"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-61" name="listingsphaseportraitm-61"></a><span class="n">xlim</span><span class="p">([</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">ub</span><span class="p">(</span><span class="mi">1</span><span class="p">)])</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-61" name="listingsphaseportraitm-61"></a><span class="n">xlim</span><span class="p">([</span><span class="n">lb</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">ub</span><span class="p">(</span><span class="mi">1</span><span class="p">)])</span>
 </code></td>
 </tr>
 <tr>
 <td class="linenos linenodiv"><a href="#listingsphaseportraitm-62"><code data-line-number="62"></code></a></td>
-<td class="code"><code><a id="listingsphaseportraitm-62" name="listingsphaseportraitm-62"></a><span class="n">ylim</span><span class="p">([</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">)])</span><span class="w"></span>
+<td class="code"><code><a id="listingsphaseportraitm-62" name="listingsphaseportraitm-62"></a><span class="n">ylim</span><span class="p">([</span><span class="n">lb</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">ub</span><span class="p">(</span><span class="mi">2</span><span class="p">)])</span>
 </code></td>
 </tr>
 </table></div>
-                    <footer id="footer"><p>Contents © 2022         <a href="mailto:jonta.teixeira@gmail.com">Jonathan C. Teixeira</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"></a><br></p>
+                    <footer id="footer"><p>Contents © 2023         <a href="mailto:jonta.teixeira@gmail.com">Jonathan C. Teixeira</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"></a><br></p>
             
         </footer>
 </div>

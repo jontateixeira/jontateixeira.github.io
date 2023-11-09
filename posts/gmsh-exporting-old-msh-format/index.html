@@ -76,8 +76,8 @@ MathJax.Hub.Config({
         <div class="body">
             <p>This post is mainly aimed at my colleagues (and students) in the <a href="http://www.lmcg.ufpe.br/">LMCG research group</a> at <a href="https://www.ufpe.br/litpeg">LITPEG</a>. After many people going to me, asking about a bug of <a href="https://bitbucket.org/lmcg_research_group/p3matpac/src/master/">p3matpac preprocessor</a>, I decide to write it. </p>
 <p>After the <a href="http://gmsh.info/">Gmsh</a> 4.0.0 release, Christophe Geuzaine and Jean-François Remacle set the new msh version (msh4) as default msh format (<em>I guess... </em>). After that, new students and colleagues have faced with a following error:</p>
-<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">gridprocessing</span><span class="p">.</span><span class="n">load_gmsh</span><span class="p">(</span><span class="s">'mesh_test.msh'</span><span class="p">)</span><span class="w"></span>
-<span class="n">Unknown</span><span class="w"> </span><span class="s">mesh</span><span class="w"> </span><span class="s">format:</span><span class="w"> </span><span class="s">4.1</span><span class="w"> </span><span class="s">0</span><span class="w"> </span><span class="s">8</span><span class="w"></span>
+<div class="code"><pre class="code literal-block"><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">gridprocessing</span><span class="p">.</span><span class="n">load_gmsh</span><span class="p">(</span><span class="s">'mesh_test.msh'</span><span class="p">)</span>
+<span class="n">Unknown</span><span class="w"> </span><span class="s">mesh</span><span class="w"> </span><span class="s">format:</span><span class="w"> </span><span class="s">4.1</span><span class="w"> </span><span class="s">0</span><span class="w"> </span><span class="s">8</span>
 </pre></div>
 
 <p>There are 3 ways to fix this: GUI, CLI, and script <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
@@ -90,20 +90,20 @@ MathJax.Hub.Config({
 <p>Done!!</p>
 <h4>CLI mode</h4>
 <p>Using the command line interface all you need is run this:</p>
-<div class="code"><pre class="code literal-block">gmsh mesh_test.geo -2 -format msh2
+<div class="code"><pre class="code literal-block">gmsh<span class="w"> </span>mesh_test.geo<span class="w"> </span>-2<span class="w"> </span>-format<span class="w"> </span>msh2
 </pre></div>
 
 <h4>Script</h4>
 <p>Just put this <code>Mesh.MshFileVersion = 2.2;</code> into <code>*.geo</code> script  file.</p>
 <h4>Other way</h4>
 <p>Using this mode, gmsh will <strong>always</strong> save in msh format 2.2. All you need is add this lines:</p>
-<div class="code"><pre class="code literal-block">Mesh.Format <span class="o">=</span> <span class="m">1</span><span class="p">;</span> // msh output format
-Mesh.MshFileVersion <span class="o">=</span> <span class="m">2</span>.2<span class="p">;</span> // Version of the MSH file format to use
+<div class="code"><pre class="code literal-block">Mesh.Format<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span>//<span class="w"> </span>msh<span class="w"> </span>output<span class="w"> </span>format
+Mesh.MshFileVersion<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>.2<span class="p">;</span><span class="w"> </span>//<span class="w"> </span>Version<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>MSH<span class="w"> </span>file<span class="w"> </span>format<span class="w"> </span>to<span class="w"> </span>use
 </pre></div>
 
 <p>Into <code>.gmshrc</code> file, by this command:</p>
-<div class="code"><pre class="code literal-block"><span class="nb">echo</span> <span class="s2">"Mesh.Format = 1; // msh output format</span>
-<span class="s2">Mesh.MshFileVersion = 2.2; // Version of the MSH file format to use"</span> &gt;&gt; ~/.gmshrc
+<div class="code"><pre class="code literal-block"><span class="nb">echo</span><span class="w"> </span><span class="s2">"Mesh.Format = 1; // msh output format</span>
+<span class="s2">Mesh.MshFileVersion = 2.2; // Version of the MSH file format to use"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.gmshrc
 </pre></div>
 
 <div class="footnote">
@@ -128,7 +128,7 @@ Mesh.MshFileVersion <span class="o">=</span> <span class="m">2</span>.2<span cla
         var disqus_shortname ="jontateixeira",
             disqus_url="http://jontateixeira.github.io/posts/gmsh-exporting-old-msh-format/",
         disqus_title="Gmsh: exporting old msh format",
-        disqus_identifier="cache/posts/gmsh-exporting-old-msh-format.html",
+        disqus_identifier="cache\posts\gmsh-exporting-old-msh-format.html",
         disqus_config = function () {
             this.language = "en";
         };
@@ -143,7 +143,7 @@ Mesh.MshFileVersion <span class="o">=</span> <span class="m">2</span>.2<span cla
 
 
     </div>
-                    <footer id="footer"><p>Contents © 2022         <a href="mailto:jonta.teixeira@gmail.com">Jonathan C. Teixeira</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"></a><br></p>
+                    <footer id="footer"><p>Contents © 2023         <a href="mailto:jonta.teixeira@gmail.com">Jonathan C. Teixeira</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"></a><br></p>
             
         </footer>
 </div>
