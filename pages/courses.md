@@ -26,3 +26,8 @@ dos corpos rígidos; Caracteristicas geométricas dos corpos.
 ## [EPET 060 - Engenharia de Reservatórios II](/pages/EPET-060/epet-060-syllabus/index.html)
 
 **Course Description**: Previsão do comportamento de reservatório de óleo e gás: balanço de materiais em reservatório de óleo e de gás (equação generalizada,linearização da equação de balanço, equação aplicada a reservatório com mecanismo de gás em solução, capa de gás e influxo de água); Análise de curvas de declínio de produção: Equações de declínio (hiperbólico, exponencial, harmônico); Métodos de análise (Gentry, Fetkovich, Tentativa e Erro); Ajuste de histórico; Métodos convencionais de recuperação; Métodos especiais de recuperação: Miscíveis, Térmicos, Químicos e Outros; Estimativa de reservas.
+
+
+## [EPET 067 - Instalações de Produção Petrolífera](/pages/EPET-067/epet-067-syllabus/index.html)
+
+**Course Description**: Sistemas de produção de petróleo: terrestres e no mar. Sistemas de medição, instrumentação e controle (introdução), válvulas, sistemas de segurança. Sistemas hidráulicos, linhas de fluxo e manifolds. Transporte e distribuição de gás. Projeto de facilidades de produção. Tratamento de água.
