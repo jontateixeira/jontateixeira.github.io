@@ -12,6 +12,10 @@ To see it::
 
     nikola serve -b
 
+To deploy the site::
+
+    nikola github_deploy
+
 To check all available commands::
 
     nikola help
