@@ -142,13 +142,13 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/index.html', 'Home', 'icon-home'),
-        ('https://www.linkedin.com/in/jonathanteixeira/', 'About me', 'icon-user'),
-        ('https://twitter.com/jontateixeira', 'My Twitter', 'icon-twitter'),
+        ('http://lattes.cnpq.br/2372591257623213', 'About me', 'icon-user'),
+        ('https://www.linkedin.com/in/jonathanteixeira/', 'LinkedIn', 'icon-linkedin'),
         ('https://github.com/jontateixeira', 'My Github', 'icon-github'),
-        ('/pages/courses/index.html', 'Course', 'icon-edit'),
-        ('/archive.html', 'Archive', 'icon-folder-open-alt'),
-        ('/categories/index.html', 'Tags', 'icon-tags'),
-        ('/rss.xml', 'RSS feed', 'icon-rss')
+        ('/posts/index.html', 'Posts', 'icon-edit'),
+        ('/archive.html', 'Archive', 'icon-archive'),
+        ('/categories/index.html', 'Tags', 'icon-tags')
+        #('/rss.xml', 'RSS feed', 'icon-rss')
     )
 }
 
@@ -243,11 +243,11 @@ POSTS = (
     ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("pages/*.md", "pages", "page.tmpl"),
-    ("pages/*.rst", "pages", "page.tmpl"),
-    ("pages/*.ipynb", "pages", "pages.tmpl"),
-    ("pages/*.txt", "pages", "page.tmpl"),
-    ("pages/*.html", "pages", "page.tmpl"),
+    ("pages/*.md", "", "page.tmpl"),
+    ("pages/*.rst", "", "page.tmpl"),
+    ("pages/*.ipynb", "", "pages.tmpl"),
+    ("pages/*.txt", "", "page.tmpl"),
+    ("pages/*.html", "", "page.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -523,7 +523,7 @@ HIDDEN_AUTHORS = ['Guest']
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # (translatable)
-# INDEX_PATH = ""
+INDEX_PATH = "posts"
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
