@@ -7,158 +7,190 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://jontateixeira.github.io/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/2019/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/2023/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/EPET-023/epet-023-syllabus/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/EPET-060/epet-060-syllabus/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/EPET-067/epet-067-syllabus/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/PEC-1054/pec-1054-syllabus/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/archive.html</loc>
-  <lastmod>2023-11-08T20:59:00Z</lastmod>
+  <lastmod>2024-12-29T17:16:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/ambiente_de_trabalho/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/cat_coaching/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/cat_nonlinear-dynamic/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/cat_pre-process/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/categories/cat_pre-requirement/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/cat_utilities/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/chemical-problem/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/coaching/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/cstr/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/gantt-plot/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/gmsh/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/gnuplot/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/lyapunovs-stability/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/mesh/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/msh-format/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/nonlinear-dynamic/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/categories/pesquisa/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/phase-portrait/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/plot/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/pre-process/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/procrastinacao/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/procrastination/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/categories/schedule/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/categories/ubuntu/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/categories/windons/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/categories/wsl/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://jontateixeira.github.io/courses/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/files/EPET067/0-review-comp-tools.html</loc>
   <lastmod>2023-11-03T21:40:00Z</lastmod>
  </url>
  <url>
+  <loc>http://jontateixeira.github.io/listings-nonlinear/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://jontateixeira.github.io/listings/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/listings/phasePortrait.m.html</loc>
-  <lastmod>2023-11-08T20:59:00Z</lastmod>
+  <lastmod>2024-12-29T17:16:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/listings/post_phase_portrait.m.html</loc>
-  <lastmod>2023-11-08T20:59:00Z</lastmod>
+  <lastmod>2024-12-29T17:16:00Z</lastmod>
  </url>
  <url>
-  <loc>http://jontateixeira.github.io/pages/EPET-023/epet-023-syllabus/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <loc>http://jontateixeira.github.io/posts/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
-  <loc>http://jontateixeira.github.io/pages/EPET-060/epet-060-syllabus/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
- </url>
- <url>
-  <loc>http://jontateixeira.github.io/pages/EPET-067/epet-067-syllabus/</loc>
-  <lastmod>2023-11-03T22:02:00Z</lastmod>
- </url>
- <url>
-  <loc>http://jontateixeira.github.io/pages/PEC-1054/pec-1054-syllabus/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
- </url>
- <url>
-  <loc>http://jontateixeira.github.io/pages/courses/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
- </url>
- <url>
-  <loc>http://jontateixeira.github.io/pages/listings-nonlinear/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <loc>http://jontateixeira.github.io/posts/ativando-o-recurso-do-wsl/</loc>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/posts/gantt-plot-using-gnuplot/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/posts/gmsh-exporting-old-msh-format/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/posts/phase-portrait/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://jontateixeira.github.io/posts/procrastination-cycle/</loc>
-  <lastmod>2023-11-03T17:12:00Z</lastmod>
+  <lastmod>2024-12-29T06:08:00Z</lastmod>
  </url>
 </urlset>
