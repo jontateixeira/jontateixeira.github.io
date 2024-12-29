@@ -9,9 +9,9 @@
 .. type: text
 -->
 
-Este post é direcionado principalmente aos membros do grupo de pesquisa em escoamento multi{fásico,componente e físico} $\mu\Phi$Flow da [UFAL](https://www.ufal.br/ctec), sobre a ativação do WSL2.
+Este post é direcionado principalmente aos membros do grupo de pesquisa $\ \mu\Phi$Flow (escoamento multifísico e multifásico) da [UFAL](https://www.ufal.br/ctec), sobre a ativação do WSL2.
 
-O WSL é uma alternativa para que os desenvolvedores pudessem aproveitar o Windows e o Linux ao mesmo tempo em um computador Windows. O WSL (Subsistema do Windows para Linux) permite que os desenvolvedores instalem uma distribuição do Linux (como Ubuntu, OpenSUSE, Kali, Debian, Arch Linux etc) e utilizem aplicativos, utilitários e ferramentas em linha de comando `bash` do Linux "dentro" do Windows, sem nenhuma modificação (sem ter que utilizar o GRUB - GRand Unified Bootloader "Carregador de inicialização unificado" ou uma maquina virtual ::weary::).
+O WSL é uma alternativa para que os desenvolvedores pudessem aproveitar o Windows e o Linux ao mesmo tempo em um computador Windows. O WSL (Subsistema do Windows para Linux) permite que os desenvolvedores instalem uma distribuição do Linux (como Ubuntu, OpenSUSE, Kali, Debian, Arch Linux etc) e utilizem aplicativos, utilitários e ferramentas em linha de comando `bash` do Linux "dentro" do Windows, sem nenhuma modificação (sem ter que utilizar o GRUB - GRand Unified Bootloader "Carregador de inicialização unificado" ou uma maquina virtual).
 
 Para que seja possível utilizar o WSL, é importante checar alguns **pré-requisitos**. Você deve estar com a versão do Windows 10 versão 2004 e superior (*Build 19041 e superior*) ou o Windows 11 para ter WSL em sua máquina. Com este pré-requisito satisfeito, vamos para o procedimento de ativação e instalação do recurso WSL.
 
